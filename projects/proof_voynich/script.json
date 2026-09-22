@@ -1,0 +1,104 @@
+{
+  "topic": "The Voynich Cipher",
+  "question": "Why has no cryptographer cracked the 15th-century Voynich manuscript?",
+  "answer_claim_id": "CLM-VOY-004",
+  "twist": "Statistical linguistic entropy proves it follows natural language laws rather than medieval random gibberish.",
+  "central_open_loop": "Is the world's most mysterious book an unbreakable code or an unknown lost language?",
+  "acts": [
+    {
+      "act_number": 1,
+      "act_name": "The Discovery",
+      "scenes": [
+        {
+          "scene_id": "voynich_s1",
+          "intensity": 9,
+          "emotional_tag": "tension",
+          "narration": "In nineteen twelve, an ancient manuscript filled with unknown script and alien botanical illustrations surfaced in Italy.",
+          "ssml_narration": "<prosody rate='+25%'>In nineteen twelve, an ancient manuscript filled with unknown script and alien botanical illustrations surfaced in Italy.</prosody>",
+          "visual_prompt": "15th century vellum manuscript with bizarre celestial astronomical wheels and unidentifiable flowering plants, macro 35mm photography, warm aged parchment",
+          "broll_keywords": ["voynich manuscript", "ancient manuscript", "medieval parchment", "cipher book"],
+          "motion": "zoom_in",
+          "sfx": ["deep_braam", "whoosh"]
+        },
+        {
+          "scene_id": "voynich_s2",
+          "intensity": 7,
+          "emotional_tag": "ambient_drone",
+          "narration": "Carbon dating confirmed the vellum was crafted around fourteen twenty, before modern printing existed.",
+          "ssml_narration": "<prosody rate='+25%'>Carbon dating confirmed the vellum was crafted around fourteen twenty, before modern printing existed.</prosody>",
+          "visual_prompt": "Laboratory radiocarbon testing on historic calfskin parchment, amber microscopic lighting, forensic historical investigation",
+          "broll_keywords": ["carbon dating", "medieval parchment", "ancient vellum", "scientific laboratory"],
+          "motion": "pan_left",
+          "sfx": ["sub_bass_pulse"]
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "act_name": "The Decryption Failure",
+      "scenes": [
+        {
+          "scene_id": "voynich_s3",
+          "intensity": 8,
+          "emotional_tag": "tension",
+          "narration": "During World War Two, elite military codebreakers attempted to decipher the two hundred forty surviving folios.",
+          "ssml_narration": "<prosody rate='+25%'>During World War Two, elite military codebreakers attempted to decipher the two hundred forty surviving folios.</prosody>",
+          "visual_prompt": "Bletchley park codebreakers analyzing handwritten cipher text with magnifying glasses and mechanical cryptanalysis wheels",
+          "broll_keywords": ["codebreakers", "military intelligence", "cryptanalysis", "cipher machine"],
+          "motion": "zoom_punch",
+          "sfx": ["tape_start", "cinematic_hit"]
+        },
+        {
+          "scene_id": "voynich_s4",
+          "intensity": 6,
+          "emotional_tag": "somber",
+          "narration": "Every known substitution cipher failed completely, leading skeptics to declare the text an elaborate medieval forgery.",
+          "ssml_narration": "<prosody rate='+25%'>Every known substitution cipher failed completely, leading skeptics to declare the text an elaborate medieval forgery.</prosody>",
+          "visual_prompt": "Old typewriter cryptographic notes stamped with red question marks, magnifying glass hovering over undecipherable calligraphy",
+          "broll_keywords": ["cipher failure", "ancient glyphs", "calligraphy", "historical archive"],
+          "motion": "pan_right",
+          "sfx": ["paper_shuffle", "whoosh"]
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "act_name": "The Algorithmic Revelation",
+      "scenes": [
+        {
+          "scene_id": "voynich_s5",
+          "intensity": 8,
+          "emotional_tag": "reveal",
+          "narration": "Yet modern algorithmic analysis revealed Zipf's law holds across all thirty-eight thousand words.",
+          "ssml_narration": "<prosody rate='+25%'>Yet modern algorithmic analysis revealed Zipf's law holds across all thirty-eight thousand words.</prosody>",
+          "visual_prompt": "3D mathematical frequency spectrum curve graphing linguistic Zipf distribution across glowing cybernetic manuscript text",
+          "broll_keywords": ["linguistic algorithm", "data visualization", "zipf law", "spectral analysis"],
+          "motion": "zoom_in",
+          "sfx": ["riser", "digital_beep"]
+        },
+        {
+          "scene_id": "voynich_s6",
+          "intensity": 9,
+          "emotional_tag": "triumphant",
+          "narration": "The text behaves exactly like natural human speech, hiding an unknown grammatical syntax that still defies supercomputers.",
+          "ssml_narration": "<prosody rate='+25%'>The text behaves exactly like natural human speech, hiding an unknown grammatical syntax that still defies supercomputers.</prosody>",
+          "visual_prompt": "High speed data neural network analyzing antique illuminated manuscript pages, golden ambient particles, mystery unsolved",
+          "broll_keywords": ["neural network", "ancient mystery", "human language", "supercomputer code"],
+          "motion": "zoom_punch",
+          "sfx": ["braam_epic", "sub_drop"]
+        },
+        {
+          "scene_id": "voynich_s7",
+          "intensity": 10,
+          "emotional_tag": "reveal",
+          "narration": "Like and subscribe to uncover the unsealed files.",
+          "ssml_narration": "<prosody rate='+25%'>Like and subscribe to uncover the unsealed files.</prosody>",
+          "visual_prompt": "Cinematic CTA card obsidian background with neon green verified badge",
+          "broll_keywords": ["channel outro", "subscribe", "verified files"],
+          "motion": "subtle_drift",
+          "sfx": ["hit_short"]
+        }
+      ]
+    }
+  ]
+}

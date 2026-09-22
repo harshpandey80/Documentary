@@ -1,0 +1,27 @@
+topic: "History of England: The 2000-Year Empire"
+thesis: "Through naval dominance, common law institutions, and industrialization, an isolated rainy island expanded to govern 24% of the globe."
+audience: "Investigative documentary and global history audience"
+tone: "Authoritative, dramatic, epic, forensic"
+runtime: "45s"
+aspect_ratio: "9:16"
+cut_length: 2.2
+tts_engine: "edge_tts"
+script_path: "projects/10_england_v4/script.json"
+color_grade_preset: "historical_warm"
+question: "How did this tiny island conquer twenty-four percent of Earth?"
+answer_claim_id: "CLM-ENG-005"
+twist: "Its true conquest was not land, but global legal, industrial, and linguistic architecture that outlived the empire itself."
+visual_tiers:
+  - "archival"
+  - "code2video"
+  - "ai_hero"
+  - "stock"
+style_profile:
+  font_primary: "Montserrat"
+  font_accent: "Cinzel"
+  color_primary: "#FFFFFF"
+  color_accent: "#00FF66"
+  color_bg: "#0B0E14"
+  caption_style: "hormozi"
+graphic_budget: 15
+allow_unverified_claims: true

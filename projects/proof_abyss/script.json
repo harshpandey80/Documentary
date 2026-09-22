@@ -1,0 +1,104 @@
+{
+  "topic": "Hydrothermal Vents: Alien Life on Earth",
+  "question": "How can complex biological ecosystems thrive in boiling water with zero sunlight?",
+  "answer_claim_id": "CLM-ABYSS-004",
+  "twist": "Chemosynthesis, extracting energy from sulfur minerals instead of sunlight, sustains entire oceanic biospheres.",
+  "central_open_loop": "Can complex multicellular life thrive in perpetual darkness without the sun?",
+  "acts": [
+    {
+      "act_number": 1,
+      "act_name": "The Abyssal Plunge",
+      "scenes": [
+        {
+          "scene_id": "abyss_s1",
+          "intensity": 9,
+          "emotional_tag": "tension",
+          "narration": "In nineteen seventy-seven, oceanographers descended two thousand four hundred meters into the Galapagos Rift.",
+          "ssml_narration": "<prosody rate='+25%'>In nineteen seventy-seven, oceanographers descended two thousand four hundred meters into the Galapagos Rift.</prosody>",
+          "visual_prompt": "Deep sea research submersible Alvin descending into pitch black oceanic abyss, glowing external halogen beams cutting through underwater particulate snow",
+          "broll_keywords": ["deep sea submersible", "ocean abyss", "underwater expedition", "ocean floor"],
+          "motion": "zoom_in",
+          "sfx": ["submarine_sonar", "deep_braam"]
+        },
+        {
+          "scene_id": "abyss_s2",
+          "intensity": 8,
+          "emotional_tag": "reveal",
+          "narration": "Surrounded by total darkness and extreme hydrostatic pressure, they discovered volcanic chimneys erupting mineral plumes at four hundred degrees.",
+          "ssml_narration": "<prosody rate='+25%'>Surrounded by total darkness and extreme hydrostatic pressure, they discovered volcanic chimneys erupting mineral plumes at four hundred degrees.</prosody>",
+          "visual_prompt": "Gigantic black smoker hydrothermal chimney billowing superheated black mineral slurry into midnight deep ocean water",
+          "broll_keywords": ["hydrothermal vent", "black smoker", "volcanic chimney", "deep ocean"],
+          "motion": "zoom_punch",
+          "sfx": ["volcano_rumble", "steam_burst"]
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "act_name": "The Biological Paradox",
+      "scenes": [
+        {
+          "scene_id": "abyss_s3",
+          "intensity": 7,
+          "emotional_tag": "somber",
+          "narration": "Standard biology dictated that without sunlight, life could not survive in this toxic acidic deep.",
+          "ssml_narration": "<prosody rate='+25%'>Standard biology dictated that without sunlight, life could not survive in this toxic acidic deep.</prosody>",
+          "visual_prompt": "Forensic scientific chart illustrating zero solar photon penetration below 1000 meters in ocean, glowing blue bathymetric contours",
+          "broll_keywords": ["bathymetry", "ocean depth chart", "photon absorption", "abyssal zone"],
+          "motion": "pan_left",
+          "sfx": ["sonar_ping", "whoosh"]
+        },
+        {
+          "scene_id": "abyss_s4",
+          "intensity": 8,
+          "emotional_tag": "tension",
+          "narration": "Yet sprawling colonies of giant tube worms and ghost crabs flourished directly around the boiling vents.",
+          "ssml_narration": "<prosody rate='+25%'>Yet sprawling colonies of giant tube worms and ghost crabs flourished directly around the boiling vents.</prosody>",
+          "visual_prompt": "Vibrant red-tipped giant riftia tube worms waving in volcanic oceanic current beside hydrothermal chimney, 4k macro documentary",
+          "broll_keywords": ["tube worms", "riftia", "hydrothermal ecosystem", "ghost crabs"],
+          "motion": "pan_right",
+          "sfx": ["water_bubble", "cinematic_swell"]
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "act_name": "Chemosynthesis Unveiled",
+      "scenes": [
+        {
+          "scene_id": "abyss_s5",
+          "intensity": 8,
+          "emotional_tag": "reveal",
+          "narration": "Scientists discovered bacteria converting sulfur minerals into biological energy through chemosynthesis.",
+          "ssml_narration": "<prosody rate='+25%'>Scientists discovered bacteria converting sulfur minerals into biological energy through chemosynthesis.</prosody>",
+          "visual_prompt": "3D animated chemical molecular model of hydrogen sulfide oxidation producing ATP energy inside symbiotic bacteria",
+          "broll_keywords": ["chemosynthesis", "molecular biology", "bacteria", "chemical reaction"],
+          "motion": "zoom_in",
+          "sfx": ["digital_chime", "riser"]
+        },
+        {
+          "scene_id": "abyss_s6",
+          "intensity": 9,
+          "emotional_tag": "triumphant",
+          "narration": "This proves life does not require sunlight to dominate an ecosystem, revolutionizing the search for extraterrestrial organisms.",
+          "ssml_narration": "<prosody rate='+25%'>This proves life does not require sunlight to dominate an ecosystem, revolutionizing the search for extraterrestrial organisms.</prosody>",
+          "visual_prompt": "Cross section comparison of Europa ice moon subterranean ocean with hydrothermal vent plumes harboring microbial alien life",
+          "broll_keywords": ["europa moon", "astrobiology", "alien ocean", "extraterrestrial life"],
+          "motion": "zoom_punch",
+          "sfx": ["braam_epic", "sub_drop"]
+        },
+        {
+          "scene_id": "abyss_s7",
+          "intensity": 10,
+          "emotional_tag": "reveal",
+          "narration": "Like and subscribe to uncover the unsealed files.",
+          "ssml_narration": "<prosody rate='+25%'>Like and subscribe to uncover the unsealed files.</prosody>",
+          "visual_prompt": "Obsidian card with glowing turquoise coordinates and verified subscribe button",
+          "broll_keywords": ["channel outro", "subscribe", "verified files"],
+          "motion": "subtle_drift",
+          "sfx": ["hit_short"]
+        }
+      ]
+    }
+  ]
+}

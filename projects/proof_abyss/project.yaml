@@ -1,0 +1,27 @@
+topic: "Hydrothermal Vents: Alien Life on Earth"
+thesis: "The discovery of hydrothermal vent ecosystems shattered the dogma that solar energy is indispensable for complex biospheres."
+audience: "Investigative documentary and science audience"
+tone: "Investigative, awe-inspiring, atmospheric, rapid-paced"
+runtime: "48s"
+aspect_ratio: "9:16"
+cut_length: 2.2
+tts_engine: "edge_tts"
+script_path: "projects/proof_abyss/script.json"
+color_grade_preset: "cinematic_cool"
+question: "How can complex biological ecosystems thrive in boiling water with zero sunlight?"
+answer_claim_id: "CLM-ABYSS-004"
+twist: "Chemosynthesis, extracting energy from sulfur minerals instead of sunlight, sustains entire oceanic biospheres."
+visual_tiers:
+  - "code2video"
+  - "ai_hero"
+  - "stock"
+  - "archival"
+style_profile:
+  font_primary: "Montserrat"
+  font_accent: "Cinzel"
+  color_primary: "#FFFFFF"
+  color_accent: "#00FF66"
+  color_bg: "#060A12"
+  caption_style: "hormozi"
+graphic_budget: 12
+allow_unverified_claims: true

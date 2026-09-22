@@ -1,0 +1,16 @@
+{
+  "name": "documentry-ai",
+  "version": "1.0.0",
+  "description": "DocStudio is a fully automated, agentic documentary video production studio that turns a topic, investigative headline, or historical mystery into a high-retention, broadcast-ready 1080p MP4 documentary video with voiceover, animated captions, procedural sound design, and distribution assets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@chatoctopus/timeline": "^0.3.0"
+  }
+}

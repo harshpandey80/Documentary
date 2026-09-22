@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InVideo AI Documentary Studio | Autonomous 1080p Video Production</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/studio/style.css">
+</head>
+<body>
+  <div id="app" class="studio-layout">
+    <!-- Top Global Header -->
+    <header class="studio-navbar">
+      <div class="nav-left">
+        <div class="brand-logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </div>
+          <div class="brand-name">DocStudio <span class="badge-studio">CREATIVE SUITE</span></div>
+        </div>
+        <div class="active-project-tag">
+          <span class="pulse-dot"></span>
+          <span id="activeProjectTitle">No Project Loaded</span>
+        </div>
+      </div>
+
+      <div class="nav-center">
+        <div class="aspect-toggle-group">
+          <button class="aspect-btn active" data-aspect="16:9" id="btnAspect169">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><rect x="2" y="5" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            16:9 YouTube
+          </button>
+          <button class="aspect-btn" data-aspect="9:16" id="btnAspect916">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><rect x="5" y="2" width="14" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            9:16 Shorts
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <a href="/live" class="btn btn-secondary" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;color:#00ff88;border-color:rgba(0,255,136,0.35);font-weight:600;" title="Live Production Pipeline Monitor">
+          <span style="font-size:10px;">🔴</span>
+          Live Monitor
+        </a>
+        <a href="/dashboard" class="btn btn-secondary" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;" title="View Pipeline Health & Audit">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          Health
+        </a>
+        <button class="btn btn-secondary" id="btnProjectsList">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          Projects
+        </button>
+        <button class="btn btn-secondary" id="btnSearchStockNav">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Stock B-Roll
+        </button>
+        <button class="btn btn-primary" id="btnRenderProject">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Render Final Cut
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Workspace Container -->
+    <main class="studio-main">
+      <!-- AI Prompt Creation Hub -->
+      <section class="ai-prompt-bar">
+        <div class="prompt-input-wrapper">
+          <div class="ai-sparkle-icon">✨</div>
+          <input 
+            type="text" 
+            id="promptInput" 
+            placeholder="Describe the documentary you want to create... (e.g. The Secret Soviet Space Disaster of the Lost Cosmonauts)"
+            autocomplete="off"
+          />
+          <button class="btn-generate-ai" id="btnGenerate">
+            <span>Generate Documentary →</span>
+          </button>
+        </div>
+
+        <div class="generation-parameters">
+          <div class="param-item">
+            <label>Runtime:</label>
+            <select id="selectRuntime">
+              <option value="60s">60s (Short / Reel)</option>
+              <option value="3m">3 Minutes (Fast)</option>
+              <option value="5m" selected>5 Minutes (Standard)</option>
+              <option value="8m">8 Minutes (Deep Dive)</option>
+            </select>
+          </div>
+
+          <div class="param-item">
+            <label>Narrator Voice:</label>
+            <select id="selectVoice">
+              <option value="en-US-ChristopherNeural" selected>Christopher (Deep Investigative)</option>
+              <option value="en-GB-RyanNeural">Ryan (BBC Documentary)</option>
+              <option value="en-US-GuyNeural">Guy (Modern History)</option>
+              <option value="en-US-EricNeural">Eric (Disaster Analysis)</option>
+              <option value="en-GB-SoniaNeural">Sonia (Elegant Historical)</option>
+              <option value="en-US-JennyNeural">Jenny (Engaging Voice)</option>
+            </select>
+          </div>
+
+          <div class="param-item">
+            <label>Subtitles:</label>
+            <select id="selectCaptionStyle">
+              <option value="hormozi" selected>Hormozi (Neon Pop)</option>
+              <option value="documentary">Cinematic Gold (Lower-Third)</option>
+              <option value="mrbeast">MrBeast Viral (Bold Yellow)</option>
+            </select>
+          </div>
+
+          <div class="param-item">
+            <label>Visual Style:</label>
+            <select id="selectStyle">
+              <option value="cinematic_investigative" selected>Cinematic Investigative</option>
+              <option value="archival_forensic">Archival Forensic</option>
+              <option value="cold_mystery">Cold Mystery & Anomaly</option>
+              <option value="modern_dynamic">Modern Dynamic</option>
+            </select>
+          </div>
+
+          <div class="param-item">
+            <label>Research Depth:</label>
+            <select id="selectResearchDepth">
+              <option value="deep" selected>Deep (Primary Sources)</option>
+              <option value="standard">Standard Fact-Check</option>
+              <option value="rapid">Rapid Overview</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Autonomous 10-Stage Production Stepper (Autonomous Rule 2 & 27) -->
+      <div class="autonomous-stepper-container" id="stepperContainer">
+        <div class="stepper-header">
+          <div class="stepper-title-box">
+            <span class="pulse-dot"></span>
+            <span id="stepperJobTitle">Autonomous Documentary Pipeline</span>
+            <span class="badge-stage-status" id="stepperJobStatus">Ready</span>
+          </div>
+          <div class="stepper-actions">
+            <button class="btn btn-sm btn-outline" id="btnInspectArtifacts">🔍 Inspect Artifacts</button>
+            <button class="btn btn-sm btn-outline" id="btnExportResolveNav">🎬 Open in Resolve</button>
+          </div>
+        </div>
+
+        <div class="stepper-track" id="stepperTrack">
+          <div class="step-node" data-stage="research" title="Phase 1: Deep Research & Primary Sources">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div class="step-label">Research</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="claims" title="Phase 2: Claims Ledger & Fact Checking">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="step-label">Fact Check</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="story" title="Phase 3: Narrative Engine & Story Arc">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <div class="step-label">Story Arc</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="narration" title="Phase 4: Multi-Speaker Voice Synthesis">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <div class="step-label">Narration</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="storyboard" title="Phase 5: Shot List & Visual Composition">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div class="step-label">Storyboard</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="assets" title="Phase 6: Visual Sourcing & AI Image Synthesis">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="step-label">Visuals</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="graphics" title="Phase 7: Tactical Maps & Data Graphics">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="step-label">Graphics</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="audio" title="Phase 8: Music Bed Ducking & SFX Mixing">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </div>
+            <div class="step-label">Audio</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="rendering" title="Phase 9: Hardware Ken Burns & Subtitle Burning">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+            </div>
+            <div class="step-label">Render</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-node" data-stage="qc" title="Phase 10: EBU R128 & Pacing Quality Control">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="step-label">QC</div>
+          </div>
+        </div>
+
+        <div class="progress-bar-bg" style="margin-top: 10px;">
+          <div class="progress-bar-fill" id="progressBarFill" style="width: 0%"></div>
+        </div>
+        <div class="stepper-details" id="progressStatusText">Enter a topic above to initiate autonomous production.</div>
+      </div>
+
+      <!-- Center Stage: Player & Timeline Editor -->
+      <div class="editor-grid">
+        <!-- Left: Real-Time Interactive Video Player -->
+        <section class="player-panel">
+          <div class="player-container aspect-16-9" id="playerWrapper">
+            <video id="studioVideo" playsinline preload="auto"></video>
+            
+            <!-- Dynamic Karaoke Subtitle Overlay -->
+            <div class="caption-overlay caption-style-hormozi" id="captionOverlay">
+              <span id="captionText">AI Documentary Studio</span>
+            </div>
+
+            <!-- Scene watermark / technical badge -->
+            <div class="player-badge" id="playerSceneBadge">ACT 1 · SCENE 1</div>
+
+            <!-- Custom Playback HUD Overlay -->
+            <div class="player-controls-overlay">
+              <div class="timeline-scrubber">
+                <input type="range" id="videoScrubber" min="0" max="100" value="0" step="0.1">
+              </div>
+              <div class="controls-row">
+                <div class="controls-left">
+                  <button class="ctrl-btn" id="btnPlayPause" title="Play/Pause (Space)">
+                    <svg id="playIcon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <svg id="pauseIcon" class="hidden" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                  </button>
+                  <span class="time-display" id="timecodeDisplay">00:00 / 00:00</span>
+                </div>
+                <div class="controls-right">
+                  <button class="ctrl-btn" id="btnVolumeToggle" title="Mute/Unmute">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                  </button>
+                  <button class="ctrl-btn" id="btnFullscreen" title="Fullscreen">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Metadata & QC Snapshot -->
+          <div class="player-meta-box">
+            <div class="meta-item">
+              <span class="label">Video Resolution:</span>
+              <span class="value" id="metaRes">1920x1080 (1080p FHD)</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">Visual Quality:</span>
+              <span class="value text-success">100% Real Motion B-Roll</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">Audio Mastering:</span>
+              <span class="value">-14.0 LUFS (Auto-Ducked)</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">Monetization:</span>
+              <span class="value text-success">Platform Safe Verified</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right: Multi-Track Scenes & B-Roll Inspector -->
+        <section class="timeline-panel">
+          <div class="timeline-header">
+            <div class="timeline-title">
+              <h3>Scenes & B-Roll Storyboard</h3>
+              <span class="scene-count-badge" id="sceneCountBadge">0 Scenes</span>
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <a class="btn btn-sm btn-success hidden" id="btnDownloadTop" href="#" download title="Download full documentary MP4">
+                ⬇️ Download MP4
+              </a>
+              <button class="btn btn-sm btn-outline" id="btnExportFCPXML" title="Export to Final Cut Pro / DaVinci Resolve">
+                Export XML
+              </button>
+            </div>
+          </div>
+
+          <div class="scenes-list" id="scenesList">
+            <div class="empty-state">
+              <div class="empty-icon">🎬</div>
+              <h4>No Documentary Loaded</h4>
+              <p>Type a topic above and click "Generate Video" to create your high-retention video with real b-roll.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Stock Video Search & Media Replacer Modal -->
+    <div class="modal-overlay hidden" id="stockModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3>Visual Footage & AI Studio</h3>
+            <p>Search commercial stock videos or generate custom 35mm visuals with Google Gemini AI</p>
+          </div>
+          <button class="modal-close-btn" id="btnCloseStockModal">&times;</button>
+        </div>
+
+        <div class="modal-tab-bar">
+          <button class="tab-btn active" id="tabStockSearch">Stock Footage</button>
+          <button class="tab-btn" id="tabGeminiAI">✨ Gemini AI</button>
+          <button class="tab-btn" id="tabVimaxClip">⚡ ViMax Director Clip</button>
+        </div>
+
+        <!-- Stock Footage Search Section -->
+        <div id="sectionStockSearch">
+          <div class="modal-search-bar">
+            <input type="text" id="stockSearchInput" placeholder="Search footage: 'space launch', 'ocean storm', 'radar control room'..." />
+            <button class="btn btn-primary" id="btnExecStockSearch">Search Footage</button>
+          </div>
+
+          <div class="stock-category-pills">
+            <button class="pill" data-cat="space rocket">Space</button>
+            <button class="pill" data-cat="ocean waves storm">Ocean</button>
+            <button class="pill" data-cat="military radar sonar">Radar</button>
+            <button class="pill" data-cat="aerial drone city">Drone</button>
+            <button class="pill" data-cat="vintage documents desk">Documents</button>
+            <button class="pill" data-cat="dark mystery fog">Mystery</button>
+            <button class="pill" data-cat="airplane cockpit night">Aviation</button>
+          </div>
+
+          <div class="stock-results-grid" id="stockResultsGrid">
+            <div class="stock-loading hidden" id="stockLoading">
+              <span class="spinner-small"></span> Searching 4K/HD video clips...
+            </div>
+          </div>
+        </div>
+
+        <!-- Gemini AI Generation Section -->
+        <div id="sectionGeminiAI" class="hidden ai-gen-container">
+          <div class="ai-gen-card ai-gen-card-gemini">
+            <div class="ai-gen-header">
+              <label style="color:var(--accent-cyan);">Google Gemini / Imagen 3 Visual Synthesizer</label>
+            </div>
+            <p class="ai-gen-desc">Describe your visual moment in photographic detail. Synthesizes a 30fps Ken Burns broadcast video clip.</p>
+            <textarea id="geminiPromptInput" rows="3" placeholder="e.g. 1961 vintage Soviet space control room with flickering vacuum tube monitors and tension..."></textarea>
+            <div class="ai-gen-controls">
+              <span style="font-size:0.75rem;color:var(--text-tertiary);">30fps Hardware Motion Render</span>
+              <button class="btn btn-primary" id="btnExecGeminiGenerate">Generate & Apply Visual</button>
+            </div>
+          </div>
+          <div id="geminiGeneratingStatus" class="hidden ai-status-msg">
+            <span class="spinner-small"></span> Synthesizing photorealistic scene & rendering motion...
+          </div>
+        </div>
+
+        <!-- ViMax AI Cinematic Clip Generation Section -->
+        <div id="sectionVimaxClip" class="hidden ai-gen-container">
+          <div class="ai-gen-card ai-gen-card-vimax">
+            <div class="ai-gen-header">
+              <span style="font-size:1.1rem;">🤖</span>
+              <label style="color:var(--accent-violet);">ViMax Director AI — Cinematic Clip Generator</label>
+            </div>
+            <p class="ai-gen-desc">Generates era-accurate, archetype-directed cinematic AI clips using the Higgsfield MCSLA prompt engine, styled to your documentary's continuity bible.</p>
+            <textarea id="vimaxClipPrompt" rows="3" placeholder="e.g. Soviet missile silo technician at night, urgent red alert, 1962 Cold War, cinematic reenactment..."></textarea>
+            <div class="ai-gen-controls">
+              <select id="vimaxCameraCode">
+                <option value="">Auto Camera (ViMax Directed)</option>
+                <option value="drone_pullback">🚁 Drone Pull-Back (Establishing)</option>
+                <option value="handheld_close">📷 Handheld Close-Up (Intimate)</option>
+                <option value="static_wide">🎬 Static Wide (Archival)</option>
+                <option value="slow_push">🎯 Slow Push-In (Tension)</option>
+                <option value="orbit">🌀 Orbit (360° Reveal)</option>
+              </select>
+              <button class="btn btn-primary" id="btnExecVimaxClip">⚡ Generate Cinematic AI Clip</button>
+            </div>
+          </div>
+          <div id="vimaxClipStatus" class="hidden ai-status-msg">
+            <span class="spinner-small"></span> ViMax Director synthesizing archetype-directed clip...
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="upload-custom-wrap">
+            <span>Or upload your own MP4:</span>
+            <input type="file" id="customVideoUpload" accept="video/mp4,video/webm" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Switcher Modal -->
+    <div class="modal-overlay hidden" id="projectsModal">
+      <div class="modal-content modal-projects">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3>Documentary Projects</h3>
+            <p>Select a project to load its full storyboard, audio tracks, and renders</p>
+          </div>
+          <button class="modal-close-btn" id="btnCloseProjectsModal">&times;</button>
+        </div>
+        <div class="projects-list-grid" id="projectsListGrid"></div>
+      </div>
+    </div>
+
+    <!-- Render & Export Modal -->
+    <div class="modal-overlay hidden" id="renderModal">
+      <div class="modal-content modal-render">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3>1080p Final Master & Distribution</h3>
+            <p>Full HD render with active kinetic subtitles & broadcast ducking</p>
+          </div>
+          <button class="modal-close-btn" id="btnCloseRenderModal">&times;</button>
+        </div>
+        <div class="render-body" id="renderBody">
+          <div class="render-preview-card">
+            <h4 id="renderTopicTitle">The Lost Cosmonaut</h4>
+            <p>1080p Full HD · Spliced Real B-Roll · Word-by-Word Highlighted Subtitles · Audio Mastered</p>
+          </div>
+          <div class="render-actions">
+            <button class="btn btn-primary btn-lg" id="btnStartFullRender">Start Final Render</button>
+            <a class="btn btn-success btn-lg hidden" id="btnDownloadFinal" href="#" download>Download 1080p MP4</a>
+          </div>
+          <!-- Dubbing Panel -->
+          <div class="dub-panel hidden" id="dubPanel">
+            <h4>🌍 Auto-Dub to Another Language</h4>
+            <p>Transcribe, translate, and re-voice the entire documentary using the pyvideotrans engine.</p>
+            <div class="dub-controls">
+              <select id="dubLanguageSelect">
+                <option value="hi">Hindi 🇮🇳</option>
+                <option value="es">Spanish 🇪🇸</option>
+                <option value="fr">French 🇫🇷</option>
+                <option value="de">German 🇩🇪</option>
+                <option value="pt">Portuguese 🇧🇷</option>
+                <option value="ar">Arabic 🇸🇦</option>
+                <option value="zh">Chinese 🇨🇳</option>
+                <option value="ja">Japanese 🇯🇵</option>
+                <option value="ko">Korean 🇰🇷</option>
+                <option value="ru">Russian 🇷🇺</option>
+              </select>
+              <label>
+                <input type="checkbox" id="dubBurnSubtitles" checked> Burn Translated Subtitles
+              </label>
+              <button class="btn btn-primary btn-sm" id="btnStartDubbing">🌍 Start Dubbing</button>
+            </div>
+            <div id="dubStatusArea" class="hidden ai-status-msg">
+              <span class="spinner-small"></span> <span id="dubStatusText">Dubbing in progress...</span>
+            </div>
+            <div id="dubDownloadArea" class="hidden" style="margin-top:10px;">
+              <a id="btnDownloadDubbed" href="#" download class="btn btn-success btn-sm">⬇️ Download Dubbed Version</a>
+            </div>
+          </div>
+          <div class="seo-box hidden" id="seoBox">
+            <h4>Viral YouTube & TikTok Package</h4>
+            <div class="seo-titles" id="seoTitles"></div>
+          </div>
+        </div>
+    <!-- Artifact & QC Inspector Modal (Autonomous Rule 27) -->
+    <div class="modal-overlay hidden" id="artifactModal">
+      <div class="modal-content" style="max-width: 900px; max-height: 85vh;">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3>🔍 Autonomous Pipeline Artifact Inspector</h3>
+            <p id="artifactJobSubtitle">Inspect intermediate structured state: research, claims, story, storyboard, graphics & QC</p>
+          </div>
+          <button class="modal-close-btn" id="btnCloseArtifactModal">&times;</button>
+        </div>
+
+        <div class="modal-tab-bar" id="artifactTabBar" style="flex-wrap: wrap; gap: 6px;">
+          <button class="tab-btn active" data-artifact="research.json">🔬 Research</button>
+          <button class="tab-btn" data-artifact="claims.json">⚖️ Claims Ledger</button>
+          <button class="tab-btn" data-artifact="story.json">📖 Story Arc</button>
+          <button class="tab-btn" data-artifact="narration.json">🎙️ Narration</button>
+          <button class="tab-btn" data-artifact="storyboard.json">📐 Storyboard</button>
+          <button class="tab-btn" data-artifact="graphics.json">📊 Graphics</button>
+          <button class="tab-btn" data-artifact="qc.json">✅ QC Audit</button>
+          <button class="tab-btn" data-artifact="timeline.json">🎞️ Timeline</button>
+        </div>
+
+        <div style="padding: 16px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <span id="artifactLoadedTitle" style="font-size: 0.85rem; color: #9ca3af; font-family: monospace;">Viewing: research.json</span>
+            <button class="btn btn-sm btn-outline" id="btnCopyArtifact">📋 Copy JSON</button>
+          </div>
+          <pre id="artifactContentDisplay" style="background: #111827; color: #10b981; padding: 14px; border-radius: 8px; max-height: 480px; overflow: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; border: 1px solid #1f2937;"></pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/studio/app.js"></script>
+</body>
+</html>

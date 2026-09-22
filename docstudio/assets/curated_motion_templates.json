@@ -1,0 +1,1052 @@
+{
+  "kinetic_typography": [
+    {
+      "name": "Snappy Text Stretch",
+      "slug": "stretch-snap-text",
+      "description": ""
+    },
+    {
+      "name": "Morph: Inflating Text",
+      "slug": "morph-inflating-text",
+      "description": ""
+    },
+    {
+      "name": "Blurry Text Spin",
+      "slug": "blurry-text-spin",
+      "description": ""
+    },
+    {
+      "name": "The Track: Product Reveal",
+      "slug": "the-track-product-reveal",
+      "description": ""
+    },
+    {
+      "name": "Image Stretch Transition",
+      "slug": "image-stretch-transition",
+      "description": ""
+    },
+    {
+      "name": "The Edit: Split Reveal",
+      "slug": "the-edit-split-reveal",
+      "description": ""
+    },
+    {
+      "name": "Stretched Type Repeater",
+      "slug": "stretched-type-repeater",
+      "description": ""
+    },
+    {
+      "name": "Blur: Text Scroller",
+      "slug": "blur-text-scroller",
+      "description": ""
+    },
+    {
+      "name": "Color Pills: Reveal",
+      "slug": "color-pills-reveal",
+      "description": ""
+    },
+    {
+      "name": "Type Trail",
+      "slug": "type-trail",
+      "description": ""
+    },
+    {
+      "name": "Morph: Dots To Text",
+      "slug": "morph-dots-to-text",
+      "description": ""
+    },
+    {
+      "name": "The Track: Animated Quote",
+      "slug": "the-track-quote",
+      "description": ""
+    },
+    {
+      "name": "Color Ring: Bounce Reveal",
+      "slug": "color-ring-bounce-reveal",
+      "description": ""
+    },
+    {
+      "name": "Stretch",
+      "slug": "stretch",
+      "description": ""
+    },
+    {
+      "name": "Text Extrusion",
+      "slug": "text-extrusion",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Type Blend",
+      "slug": "blend-modes-type-blend",
+      "description": ""
+    },
+    {
+      "name": "Logo Tap: Color Reveal",
+      "slug": "logo-tap-color-reveal",
+      "description": ""
+    },
+    {
+      "name": "Morph: Shape To Text",
+      "slug": "morph-shape-to-text",
+      "description": ""
+    },
+    {
+      "name": "Elastic Text",
+      "slug": "elastic-text",
+      "description": ""
+    },
+    {
+      "name": "Tilted Text Snap",
+      "slug": "tilted-text-snap",
+      "description": ""
+    },
+    {
+      "name": "Mobile Screens Reveal",
+      "slug": "mobile-screens-reveal",
+      "description": ""
+    },
+    {
+      "name": "Glitch 01: Text Reveal",
+      "slug": "glitch-01-text-reveal",
+      "description": ""
+    },
+    {
+      "name": "Animated Text Messages",
+      "slug": "animated-text-messages",
+      "description": ""
+    },
+    {
+      "name": "Bold Text Snap",
+      "slug": "bold-text-snap",
+      "description": ""
+    },
+    {
+      "name": "The Route: Logo Reveal",
+      "slug": "the-route-logo-reveal",
+      "description": ""
+    },
+    {
+      "name": "The Harvest: Banana Spin",
+      "slug": "the-harvest-banana-spin",
+      "description": ""
+    },
+    {
+      "name": "Text Message [iOS]",
+      "slug": "text-message-ios",
+      "description": ""
+    },
+    {
+      "name": "The Vault: Card Reveal",
+      "slug": "the-vault-card-reveal",
+      "description": ""
+    },
+    {
+      "name": "Morph: Lines To Text",
+      "slug": "morph-lines-to-text",
+      "description": ""
+    },
+    {
+      "name": "Project Reveal",
+      "slug": "project-reveal",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Color And Text",
+      "slug": "blend-modes-color-and-text",
+      "description": ""
+    },
+    {
+      "name": "Glitch 02: Text Reveal",
+      "slug": "glitch-02-text-reveal",
+      "description": ""
+    },
+    {
+      "name": "Cascading Text",
+      "slug": "cascading-text",
+      "description": ""
+    },
+    {
+      "name": "Sliding Text Reveal",
+      "slug": "sliding-text-reveal",
+      "description": ""
+    },
+    {
+      "name": "Video Title Slide",
+      "slug": "video-title-slide",
+      "description": ""
+    },
+    {
+      "name": "Motion Design: Looped Text",
+      "slug": "motion-design-looped-text",
+      "description": ""
+    },
+    {
+      "name": "Search Bar Reveal",
+      "slug": "search-bar-reveal",
+      "description": ""
+    },
+    {
+      "name": "Sliding Title Reveal [Apple Event]",
+      "slug": "sliding-title-reveal-apple-event",
+      "description": ""
+    },
+    {
+      "name": "Gradients: Logo Reveal",
+      "slug": "gradients-logo-reveal",
+      "description": ""
+    },
+    {
+      "name": "The Prompt: Text To Image",
+      "slug": "the-prompt-text-to-image",
+      "description": ""
+    },
+    {
+      "name": "Text Scramble",
+      "slug": "text-scramble",
+      "description": ""
+    },
+    {
+      "name": "Loading Spinner: Infinite Loop",
+      "slug": "loading-spinner-infinite-loop",
+      "description": ""
+    },
+    {
+      "name": "Loading Spinner: Success Animation",
+      "slug": "loading-spinner-success-animation",
+      "description": ""
+    },
+    {
+      "name": "Glitchy Text Reveal",
+      "slug": "glitchy-text-reveal",
+      "description": ""
+    },
+    {
+      "name": "Text Mirror Effect",
+      "slug": "text-mirror-effect",
+      "description": ""
+    },
+    {
+      "name": "Text",
+      "slug": "text",
+      "description": ""
+    },
+    {
+      "name": "Video titles",
+      "slug": "video-titles",
+      "description": ""
+    },
+    {
+      "name": "Custom text effects",
+      "slug": "custom-text",
+      "description": ""
+    }
+  ],
+  "infographics_and_stats": [
+    {
+      "name": "Countdown: Bold",
+      "slug": "countdown-bold",
+      "description": ""
+    },
+    {
+      "name": "Animated Search Bar",
+      "slug": "animated-search-bar",
+      "description": ""
+    },
+    {
+      "name": "Counter: Halftone Poster",
+      "slug": "halftone-counter-poster",
+      "description": ""
+    },
+    {
+      "name": "Counter: Frosted Glass",
+      "slug": "frosted-glass-counter",
+      "description": ""
+    },
+    {
+      "name": "Counter: Dotted Circle",
+      "slug": "dotted-counter-circle",
+      "description": ""
+    },
+    {
+      "name": "The Track: Animated Metrics",
+      "slug": "the-track-app-showcase",
+      "description": ""
+    },
+    {
+      "name": "Counter: Bold Poster",
+      "slug": "counter-poster",
+      "description": ""
+    },
+    {
+      "name": "Horizontal Bar Chart: Metrics",
+      "slug": "horizontal-bar-chart-metrics",
+      "description": ""
+    },
+    {
+      "name": "Grid Chart: Split",
+      "slug": "grid-chart-split",
+      "description": ""
+    },
+    {
+      "name": "Morph: Line to Radar Chart",
+      "slug": "morph-line-to-radar-chart",
+      "description": ""
+    },
+    {
+      "name": "Animated Progress Bar",
+      "slug": "progress-bar",
+      "description": ""
+    },
+    {
+      "name": "The Track: Countdown",
+      "slug": "the-track-countdown",
+      "description": ""
+    },
+    {
+      "name": "Bar Chart: Skyline",
+      "slug": "bar-chart-skyline",
+      "description": ""
+    },
+    {
+      "name": "Counter: Progress Ring",
+      "slug": "counter-progress-ring",
+      "description": ""
+    },
+    {
+      "name": "Counter: Glitch",
+      "slug": "clock-counter",
+      "description": ""
+    },
+    {
+      "name": "Search Bar Reveal",
+      "slug": "search-bar-reveal",
+      "description": ""
+    },
+    {
+      "name": "Gradients: Geometric Morph",
+      "slug": "gradients-geometric-morph",
+      "description": ""
+    },
+    {
+      "name": "Navigation Bar",
+      "slug": "navigation-bar",
+      "description": ""
+    },
+    {
+      "name": "Loading Animation: Bars",
+      "slug": "loading-animation-bars",
+      "description": ""
+    },
+    {
+      "name": "Counter: Blur",
+      "slug": "blur-counter",
+      "description": ""
+    },
+    {
+      "name": "Donut Chart: 3 Parts",
+      "slug": "donut-chart-3-parts",
+      "description": ""
+    },
+    {
+      "name": "Bar Chart: Sleep Tracker",
+      "slug": "bar-chart-sleep-tracker",
+      "description": ""
+    },
+    {
+      "name": "Multiple Bar Chart",
+      "slug": "multiple-bar-chart",
+      "description": ""
+    },
+    {
+      "name": "Animated Donut Chart: Black",
+      "slug": "animated-donut-chart-black",
+      "description": ""
+    },
+    {
+      "name": "Stacked Donut Chart",
+      "slug": "stacked-donut-chart",
+      "description": ""
+    },
+    {
+      "name": "Animated Line Chart: Blue",
+      "slug": "animated-line-chart-blue",
+      "description": ""
+    },
+    {
+      "name": "Multiple Line Chart: Green",
+      "slug": "multiple-line-chart-green",
+      "description": ""
+    },
+    {
+      "name": "Line Chart: User Acquisition",
+      "slug": "line-chart-user-acquisition",
+      "description": ""
+    },
+    {
+      "name": "Animated Donut Chart",
+      "slug": "animated-donut-chart",
+      "description": ""
+    },
+    {
+      "name": "Stacked Bar Chart",
+      "slug": "stacked-bar-chart",
+      "description": ""
+    },
+    {
+      "name": "Animated Bar Chart",
+      "slug": "animated-bar-chart",
+      "description": ""
+    },
+    {
+      "name": "Animated Line Chart: Purple",
+      "slug": "animated-line-chart-purple",
+      "description": ""
+    },
+    {
+      "name": "Holographic Logo",
+      "slug": "holographic-logo",
+      "description": ""
+    },
+    {
+      "name": "Counter: 1,000 Figma Plugin Installs",
+      "slug": "counter-1-000-figma-plugin-installs",
+      "description": ""
+    },
+    {
+      "name": "Stacked Chart: Cascade",
+      "slug": "stacked-chart-cascade",
+      "description": ""
+    },
+    {
+      "name": "Counter: Pixel",
+      "slug": "counter-pixel",
+      "description": ""
+    },
+    {
+      "name": "Counters",
+      "slug": "counters",
+      "description": ""
+    },
+    {
+      "name": "Charts",
+      "slug": "charts",
+      "description": ""
+    }
+  ],
+  "editorial_and_archival": [
+    {
+      "name": "Dithering Effect",
+      "slug": "dithering-effect",
+      "description": ""
+    },
+    {
+      "name": "The Edit: Nested Images ",
+      "slug": "the-edit-nested-images",
+      "description": ""
+    },
+    {
+      "name": "Interactive Gallery",
+      "slug": "interactive-gallery",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Double Exposure",
+      "slug": "blend-modes-double-exposure",
+      "description": ""
+    },
+    {
+      "name": "Photo Gallery",
+      "slug": "photo-gallery",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Circle Stack",
+      "slug": "blend-modes-circle-stack",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Color Blocks",
+      "slug": "blend-modes-color-blocks",
+      "description": ""
+    },
+    {
+      "name": "Pixelated Mask",
+      "slug": "pixelated-mask",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Gradient Orbs",
+      "slug": "blend-modes-gradient-orbs",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Collage Shuffle",
+      "slug": "blend-modes-collage-shuffle",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Overlay Poster",
+      "slug": "blend-modes-overlay-poster",
+      "description": ""
+    },
+    {
+      "name": "Morph: Video Mask",
+      "slug": "morph-video-mask",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Type Blend",
+      "slug": "blend-modes-type-blend",
+      "description": ""
+    },
+    {
+      "name": "Config: Photo Gallery 01",
+      "slug": "config-photo-gallery-01",
+      "description": ""
+    },
+    {
+      "name": "Animated Web Gallery",
+      "slug": "animated-web-gallery",
+      "description": ""
+    },
+    {
+      "name": "Animated Mobile Gallery",
+      "slug": "animated-mobile-gallery",
+      "description": ""
+    },
+    {
+      "name": "Animated Photo Gallery",
+      "slug": "animated-photo-gallery",
+      "description": ""
+    },
+    {
+      "name": "Mobile Gallery: Grid",
+      "slug": "mobile-gallery-grid",
+      "description": ""
+    },
+    {
+      "name": "Web Gallery: Grid",
+      "slug": "web-gallery-grid",
+      "description": ""
+    },
+    {
+      "name": "Blur: Article Gallery [iOS]",
+      "slug": "blur-article-gallery-ios",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Color And Text",
+      "slug": "blend-modes-color-and-text",
+      "description": ""
+    },
+    {
+      "name": "Design: Negative Mask Effect",
+      "slug": "design-negative-mask-effect",
+      "description": ""
+    },
+    {
+      "name": "Blend Modes: Mode Showcase",
+      "slug": "blend-modes-mode-showcase",
+      "description": ""
+    },
+    {
+      "name": "Image Mask: Parallax Effect",
+      "slug": "image-mask-parallax-effect",
+      "description": ""
+    },
+    {
+      "name": "Gallery: Scroll",
+      "slug": "gallery-scroll",
+      "description": ""
+    },
+    {
+      "name": "Drop It Like It's Hot: Mask",
+      "slug": "drop-it-like-it-s-hot-mask",
+      "description": ""
+    },
+    {
+      "name": "Config: Photo Gallery 02",
+      "slug": "config-photo-gallery-02",
+      "description": ""
+    },
+    {
+      "name": "Config: Photo Gallery 03",
+      "slug": "config-photo-gallery-03",
+      "description": ""
+    },
+    {
+      "name": "Themes: Animated Gallery",
+      "slug": "themes-animated-gallery",
+      "description": ""
+    },
+    {
+      "name": "Adobe Photoshop Logo",
+      "slug": "adobe-photoshop-logo",
+      "description": ""
+    },
+    {
+      "name": "Blend modes",
+      "slug": "blend-modes",
+      "description": ""
+    }
+  ],
+  "hud_and_lower_thirds": [
+    {
+      "name": "Orbit: Cards",
+      "slug": "orbit-cards",
+      "description": ""
+    },
+    {
+      "name": "View Cart Button: Split",
+      "slug": "view-cart-button-split",
+      "description": ""
+    },
+    {
+      "name": "Card Flip",
+      "slug": "card-flip",
+      "description": ""
+    },
+    {
+      "name": "Color Cards: Cascade",
+      "slug": "color-cards-cascade",
+      "description": ""
+    },
+    {
+      "name": "Animated Cards",
+      "slug": "animated-cards",
+      "description": ""
+    },
+    {
+      "name": "The Edit: Tagline [White]",
+      "slug": "the-edit-tagline-white",
+      "description": ""
+    },
+    {
+      "name": "Stacked Cards",
+      "slug": "stacked-cards",
+      "description": ""
+    },
+    {
+      "name": "The Prompt: Generate Button",
+      "slug": "the-prompt-generate-button",
+      "description": ""
+    },
+    {
+      "name": "Rotating Cards",
+      "slug": "rotating-cards",
+      "description": ""
+    },
+    {
+      "name": "Interactive Button: Glow",
+      "slug": "interactive-button-glow",
+      "description": ""
+    },
+    {
+      "name": "The Edit: Tagline [Dark]",
+      "slug": "the-edit-tagline-dark",
+      "description": ""
+    },
+    {
+      "name": "Animated Emoji Button",
+      "slug": "animated-emoji-button",
+      "description": ""
+    },
+    {
+      "name": "The Vault: Animated Cards",
+      "slug": "the-vault-animated-cards",
+      "description": ""
+    },
+    {
+      "name": "Instruction Card",
+      "slug": "instruction-card",
+      "description": ""
+    },
+    {
+      "name": "Linear Cards",
+      "slug": "linear-cards",
+      "description": ""
+    },
+    {
+      "name": "The Edit: Instagram Story",
+      "slug": "the-edit-instagram-story",
+      "description": ""
+    },
+    {
+      "name": "The Vault: Card Features",
+      "slug": "the-vault-card-features",
+      "description": ""
+    },
+    {
+      "name": "Back / Next Buttons",
+      "slug": "back-next-buttons",
+      "description": ""
+    },
+    {
+      "name": "Glow Button",
+      "slug": "glow-button",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story [iOS]",
+      "slug": "instagram-story-ios",
+      "description": ""
+    },
+    {
+      "name": "The Vault: Card Reveal",
+      "slug": "the-vault-card-reveal",
+      "description": ""
+    },
+    {
+      "name": "Interactive Badges",
+      "slug": "interactive-badges",
+      "description": ""
+    },
+    {
+      "name": "The Crust: Tagline",
+      "slug": "the-crust-tagline",
+      "description": ""
+    },
+    {
+      "name": "Glass Button",
+      "slug": "glass-button",
+      "description": ""
+    },
+    {
+      "name": "Color Cards: Expand",
+      "slug": "color-cards-expand",
+      "description": ""
+    },
+    {
+      "name": "Color Cards: Stack",
+      "slug": "color-cards-stack",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: Pastel",
+      "slug": "instagram-story-pastel",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: Fashion",
+      "slug": "instagram-story-fashion",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 3D Hand",
+      "slug": "instagram-story-3d-hand",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: Browse More",
+      "slug": "instagram-story-browse-more",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 2 Images",
+      "slug": "instagram-story-2-images",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 3 Horizontal Images",
+      "slug": "instagram-story-3-horizontal-images",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 3 Square Images",
+      "slug": "instagram-story-3-square-images",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 2 Square Images",
+      "slug": "instagram-story-2-square-images",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 4 Images",
+      "slug": "instagram-story-4-images",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 2 Vertical Images",
+      "slug": "instagram-story-2-vertical-images",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 2 Images With Captions",
+      "slug": "instagram-story-2-images-with-captions",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: 5 Images",
+      "slug": "instagram-story-5-images",
+      "description": ""
+    },
+    {
+      "name": "Color Cards: Scale",
+      "slug": "color-cards-scaling-motion",
+      "description": ""
+    },
+    {
+      "name": "View Cart Button",
+      "slug": "view-cart-button",
+      "description": ""
+    },
+    {
+      "name": "Instagram Story: Blog Post",
+      "slug": "instagram-story-blog-post",
+      "description": ""
+    },
+    {
+      "name": "Instagram Stories: Collage",
+      "slug": "instagram-stories-collage",
+      "description": ""
+    },
+    {
+      "name": "Button: Hover Effect",
+      "slug": "button-hover-effect",
+      "description": ""
+    },
+    {
+      "name": "Instagram Interactions",
+      "slug": "instagram-interactions",
+      "description": ""
+    },
+    {
+      "name": "Instagram Like",
+      "slug": "instagram-like",
+      "description": ""
+    },
+    {
+      "name": "Like Badge",
+      "slug": "like-badge",
+      "description": ""
+    },
+    {
+      "name": "New Badge",
+      "slug": "new-badge",
+      "description": ""
+    },
+    {
+      "name": "Interactive Button: Trace",
+      "slug": "interactive-button-trace",
+      "description": ""
+    },
+    {
+      "name": "Banking App: Cards",
+      "slug": "banking-app-cards",
+      "description": ""
+    },
+    {
+      "name": "Toggle Switch Button",
+      "slug": "toggle-switch-button",
+      "description": ""
+    },
+    {
+      "name": "3 Toggle Switch Buttons",
+      "slug": "3-toggle-switch-buttons",
+      "description": ""
+    },
+    {
+      "name": "The Track: Tagline",
+      "slug": "the-track-tagline",
+      "description": ""
+    },
+    {
+      "name": "Black App Store Badge",
+      "slug": "black-app-store-badge",
+      "description": ""
+    },
+    {
+      "name": "White App Store Badge",
+      "slug": "white-app-store-badge",
+      "description": ""
+    },
+    {
+      "name": "Google Play Badge",
+      "slug": "google-play-badge",
+      "description": ""
+    },
+    {
+      "name": "Continue Button Interaction",
+      "slug": "continue-button-interaction",
+      "description": ""
+    },
+    {
+      "name": "The Crust: Tagline and Menu",
+      "slug": "the-crust-tagline-and-menu",
+      "description": ""
+    },
+    {
+      "name": "NFT Cards: 3D",
+      "slug": "nft-cards-3d",
+      "description": ""
+    },
+    {
+      "name": "YouTube Subscribe Button",
+      "slug": "youtube-subscribe-button",
+      "description": ""
+    },
+    {
+      "name": "Instagram Logo",
+      "slug": "instagram-logo",
+      "description": ""
+    },
+    {
+      "name": "Buttons",
+      "slug": "buttons",
+      "description": ""
+    },
+    {
+      "name": "Zero Gravity: Floating Cards",
+      "slug": "zero-gravity-floating-cards",
+      "description": ""
+    }
+  ],
+  "cinematic_transitions": [
+    {
+      "name": "Orbit: Cards",
+      "slug": "orbit-cards",
+      "description": ""
+    },
+    {
+      "name": "Orbit: Social Media Showreel",
+      "slug": "orbit-social-media-showreel",
+      "description": ""
+    },
+    {
+      "name": "Morph: Inflating Text",
+      "slug": "morph-inflating-text",
+      "description": ""
+    },
+    {
+      "name": "Ripple Effect",
+      "slug": "ripple-effect",
+      "description": ""
+    },
+    {
+      "name": "Project Teaser",
+      "slug": "project-teaser",
+      "description": ""
+    },
+    {
+      "name": "View Cart Button: Split",
+      "slug": "view-cart-button-split",
+      "description": ""
+    },
+    {
+      "name": "Image Stretch Transition",
+      "slug": "image-stretch-transition",
+      "description": ""
+    },
+    {
+      "name": "Card Flip",
+      "slug": "card-flip",
+      "description": ""
+    },
+    {
+      "name": "The Edit: Split Reveal",
+      "slug": "the-edit-split-reveal",
+      "description": ""
+    },
+    {
+      "name": "The Edit: Collection Teaser",
+      "slug": "the-edit-collection-teaser",
+      "description": ""
+    },
+    {
+      "name": "Morph: Dots To Text",
+      "slug": "morph-dots-to-text",
+      "description": ""
+    },
+    {
+      "name": "Morph: Running Character",
+      "slug": "morph-running-character",
+      "description": ""
+    },
+    {
+      "name": "The Route: Morphing Icons",
+      "slug": "the-route-morphing-icons",
+      "description": ""
+    },
+    {
+      "name": "Morph: Animated Icon",
+      "slug": "morph-animated-icon",
+      "description": ""
+    },
+    {
+      "name": "Morph: Animated Face",
+      "slug": "morph-animated-face",
+      "description": ""
+    },
+    {
+      "name": "Morph: Video Mask",
+      "slug": "morph-video-mask",
+      "description": ""
+    },
+    {
+      "name": "Morph: Shape To Text",
+      "slug": "morph-shape-to-text",
+      "description": ""
+    },
+    {
+      "name": "Grid Chart: Split",
+      "slug": "grid-chart-split",
+      "description": ""
+    },
+    {
+      "name": "Morph: Line to Radar Chart",
+      "slug": "morph-line-to-radar-chart",
+      "description": ""
+    },
+    {
+      "name": "Morph: Lines To Text",
+      "slug": "morph-lines-to-text",
+      "description": ""
+    },
+    {
+      "name": "Gradients: Morphing Shapes",
+      "slug": "gradients-morphing-shapes",
+      "description": ""
+    },
+    {
+      "name": "Before & After: Split",
+      "slug": "before-after-split-mask",
+      "description": ""
+    },
+    {
+      "name": "Morph: Weather Icons",
+      "slug": "morph-animated-weather-icons",
+      "description": ""
+    },
+    {
+      "name": "Gradients: Geometric Morph",
+      "slug": "gradients-geometric-morph",
+      "description": ""
+    },
+    {
+      "name": "Splitting Cube: Perfect Loop",
+      "slug": "splitting-cube-perfect-loop",
+      "description": ""
+    },
+    {
+      "name": "Pixel Dissolve Transition",
+      "slug": "pixel-dissolve-transition",
+      "description": ""
+    },
+    {
+      "name": "Before & After: Swipe",
+      "slug": "before-after-swipe",
+      "description": ""
+    },
+    {
+      "name": "Round Logo: Ripple",
+      "slug": "round-logo-ripple",
+      "description": ""
+    },
+    {
+      "name": "Morph",
+      "slug": "morph",
+      "description": ""
+    }
+  ]
+}

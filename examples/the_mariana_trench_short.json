@@ -1,0 +1,281 @@
+{
+  "topic": "The Mariana Trench",
+  "central_open_loop": "What recorded a metallic 38-Hertz acoustic signal 36,000 feet beneath the Pacific Ocean?",
+  "acts": [
+    {
+      "act_number": 1,
+      "act_name": "The Abyssal Acoustic Anomaly",
+      "scenes": [
+        {
+          "scene_id": "act1_s1",
+          "intensity": 10,
+          "emotional_tag": "tension",
+          "narration": "Thirty-six thousand feet beneath the Pacific, inside the pitch-black abyss of Challenger Deep, titanium hydrophones recorded a sound that oceanographers cannot explain.",
+          "ssml_narration": "<speak><prosody rate=\"+6%\" pitch=\"-1Hz\"><emphasis level=\"strong\">Thirty-six thousand feet beneath the Pacific, inside the pitch-black abyss of Challenger Deep,</emphasis></prosody> <break time=\"150ms\"/> <prosody rate=\"+4%\" pitch=\"-2Hz\">titanium hydrophones recorded a sound that oceanographers cannot explain.</prosody></speak>",
+          "visual_prompt": "Deep sea titanium submersible probe sinking into pitch black Mariana Trench, bioluminescent marine snow, eerie ocean depth",
+          "broll_keywords": [
+            "deep sea underwater abyss",
+            "submarine diving dark ocean",
+            "ocean trench depth",
+            "sonar screen pulsing"
+          ],
+          "sub_prompts": [
+            "Deep sea autonomous research hydrophone sinking slowly through pitch-black ocean abyss with bioluminescent particles",
+            "Vintage analog sonar hydrophone recording console glowing in dim oceanographic research vessel control room",
+            "3D bathymetric depth chart of Challenger Deep dropping into black canyon at 10,994 meters depth",
+            "Heavy Pacific ocean storm waves crashing under ominous dark twilight sky"
+          ],
+          "sub_keywords": [
+            [
+              "deep sea underwater abyss",
+              "submersible diving ocean",
+              "dark underwater abyss"
+            ],
+            [
+              "sonar radar screen",
+              "naval control room",
+              "oceanographic research console"
+            ],
+            [
+              "bathymetric ocean map",
+              "underwater canyon trench",
+              "sonar depth display"
+            ],
+            [
+              "dark ocean storm waves",
+              "stormy ocean sea",
+              "heavy ocean swell"
+            ]
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "deep_braam",
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act1_s2",
+          "intensity": 9,
+          "emotional_tag": "tension",
+          "narration": "At the bottom of the world, water pressure exceeds one thousand atmospheres, over eight tons per square inch. Yet the hydrophone captured a metallic, repeating acoustic pulse echoing through the bedrock.",
+          "ssml_narration": "<speak><prosody rate=\"+5%\" pitch=\"-1Hz\">At the bottom of the world, water pressure exceeds one thousand atmospheres, over eight tons per square inch.</prosody> <break time=\"200ms\"/> <prosody rate=\"+3%\" pitch=\"-2Hz\"><emphasis level=\"strong\">Yet the hydrophone captured a metallic, repeating acoustic pulse echoing through the bedrock.</emphasis></prosody></speak>",
+          "visual_prompt": "Crushing deep ocean pressure underwater viewport glass under extreme stress, deep blue water abyss",
+          "broll_keywords": [
+            "underwater viewport deep sea",
+            "sonar frequency waveform display",
+            "pressure gauge dial high",
+            "deep ocean darkness"
+          ],
+          "sub_prompts": [
+            "Heavy titanium pressure hull viewport looking into empty black abyss of Mariana Trench",
+            "Digital sound frequency analyzer displaying sharp rhythmic acoustic spikes at 38 Hertz",
+            "Extreme high-pressure hydraulic ocean depth gauge needle pinned at maximum limit"
+          ],
+          "sub_keywords": [
+            [
+              "underwater submarine viewport",
+              "deep ocean submersible hull",
+              "ocean abyss darkness"
+            ],
+            [
+              "audio frequency waveform",
+              "green oscilloscope sound wave",
+              "sound frequency spectrum"
+            ],
+            [
+              "pressure gauge dial",
+              "industrial pressure meter",
+              "gauge dial instrument"
+            ]
+          ],
+          "motion": "zoom_in",
+          "sfx": [
+            "whoosh",
+            "radar_ping"
+          ]
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "act_name": "The Unsealed Spectrogram",
+      "scenes": [
+        {
+          "scene_id": "act2_s1",
+          "intensity": 9,
+          "emotional_tag": "reveal",
+          "narration": "When researchers from NOAA and Oregon State University isolated the audio spectrum, the acoustic pattern was dubbed the Western Pacific Biophony. But secondary sensors registered seismic movement travelling miles below the crust.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"-1Hz\">When researchers from NOAA and Oregon State University isolated the audio spectrum, the acoustic pattern was dubbed the Western Pacific Biophony.</prosody> <break time=\"150ms\"/> <prosody rate=\"+7%\" pitch=\"+2Hz\"><emphasis level=\"strong\">But secondary sensors registered seismic movement travelling miles below the crust.</emphasis></prosody></speak>",
+          "visual_prompt": "Declassified oceanographic research dossier with spectrogram frequency graph, red confidential stamp, naval research table",
+          "broll_keywords": [
+            "classified government documents",
+            "seismic recording chart paper",
+            "oceanographic research vessel night",
+            "radar tracking display"
+          ],
+          "sub_prompts": [
+            "Classified Manila evidence dossier stamped DECLASSIFIED displaying acoustic spectrogram graphs",
+            "Seismograph drum recorder needle trembling erratically tracing deep earth shockwaves",
+            "Oceanographic research ship illuminated under spotlight beams on endless dark Pacific at night"
+          ],
+          "sub_keywords": [
+            [
+              "classified government dossier",
+              "manila evidence folder",
+              "redacted official documents"
+            ],
+            [
+              "seismograph drum paper needle",
+              "seismic frequency graph",
+              "analog scientific recorder"
+            ],
+            [
+              "ocean research vessel night",
+              "ship spotlight ocean dark",
+              "cargo vessel night sea"
+            ]
+          ],
+          "motion": "pan_left",
+          "sfx": [
+            "deep_braam",
+            "riser"
+          ]
+        },
+        {
+          "scene_id": "act2_s2",
+          "intensity": 8,
+          "emotional_tag": "somber",
+          "narration": "While biologists suggested an unknown baleen whale species, acoustic engineers calculated that the sound source was moving at impossible speeds across the trench canyon, far exceeding any known biological creature.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"-1Hz\">While biologists suggested an unknown baleen whale species,</prosody> <prosody rate=\"+6%\" pitch=\"+1Hz\"><emphasis level=\"strong\">acoustic engineers calculated that the sound source was moving at impossible speeds across the trench canyon, far exceeding any known biological creature.</emphasis></prosody></speak>",
+          "visual_prompt": "Massive dark silhouette moving deep beneath underwater oceanic canyon, eerie sonar ping ripples",
+          "broll_keywords": [
+            "underwater silhouette deep ocean",
+            "submarine sonar navigation",
+            "dark underwater canyon"
+          ],
+          "sub_prompts": [
+            "Massive dark underwater shadow gliding slowly over jagged abyssal oceanic canyon",
+            "Naval acoustic hydrophone operator staring intently at cascading green waterfall display",
+            "Declassified US Naval intelligence hydrophone transmission logs with heavy black redaction lines"
+          ],
+          "sub_keywords": [
+            [
+              "underwater silhouette deep ocean",
+              "deep sea creature shadow",
+              "mysterious underwater shape"
+            ],
+            [
+              "naval sonar operator display",
+              "submarine control room dark",
+              "radar waterfall display"
+            ],
+            [
+              "redacted military documents",
+              "declassified naval archives",
+              "blacked out text document"
+            ]
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "sub_impact",
+            "whoosh"
+          ]
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "act_name": "The Trieste Logs & Unsealed Files",
+      "scenes": [
+        {
+          "scene_id": "act3_s1",
+          "intensity": 9,
+          "emotional_tag": "reveal",
+          "narration": "Declassified naval sonar archives from Project Sound Surveillance revealed identical acoustic signatures dating back to 1960, when the bathyscaphe Trieste first descended to the trench floor.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"-1Hz\">Declassified naval sonar archives from Project Sound Surveillance revealed identical acoustic signatures dating back to 1960,</prosody> <break time=\"150ms\"/> <prosody rate=\"+6%\" pitch=\"+1Hz\"><emphasis level=\"strong\">when the bathyscaphe Trieste first descended to the trench floor.</emphasis></prosody></speak>",
+          "visual_prompt": "Vintage 1960 bathyscaphe Trieste submersible diving into deep ocean, vintage naval submarine control room",
+          "broll_keywords": [
+            "vintage submarine deep sea",
+            "historic submersible diving",
+            "naval sonar console 1960",
+            "vintage naval archive"
+          ],
+          "sub_prompts": [
+            "Historical bathyscaphe Trieste submersible vessel descending through murky deep ocean water",
+            "Vintage 1960 US Navy hydrophone monitoring station with reel to reel magnetic tape recorder spinning",
+            "Declassified Department of the Navy incident logbook stamped CONFIDENTIAL open on wooden desk"
+          ],
+          "sub_keywords": [
+            [
+              "vintage submarine deep sea",
+              "historic submersible underwater",
+              "deep sea research sub"
+            ],
+            [
+              "reel to reel tape recorder vintage",
+              "analog naval audio monitor",
+              "sonar recording station"
+            ],
+            [
+              "declassified naval documents",
+              "vintage military logbook",
+              "classified stamp paper"
+            ]
+          ],
+          "motion": "pan_left",
+          "sfx": [
+            "deep_braam",
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act3_s2",
+          "intensity": 10,
+          "emotional_tag": "tension",
+          "narration": "To this day, the raw hydrophone tapes remain classified under national defense directives. Seven miles down in total darkness, something is awake in the Earth's deepest scar. Like and subscribe to uncover the unsealed files.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"-1Hz\">To this day, the raw hydrophone tapes remain classified under national defense directives.</prosody> <break time=\"150ms\"/> <prosody rate=\"+6%\" pitch=\"-2Hz\"><emphasis level=\"strong\">Seven miles down in total darkness, something is awake in the Earth's deepest scar.</emphasis></prosody> <break time=\"200ms\"/> <prosody rate=\"+5%\" pitch=\"+1Hz\"><emphasis level=\"strong\">Like and subscribe to uncover the unsealed files.</emphasis></prosody></speak>",
+          "visual_prompt": "Satellite view of the Mariana Trench deep Pacific fracture, glowing bathymetric blue grid, cinematic YouTube outro framing",
+          "broll_keywords": [
+            "satellite view pacific ocean",
+            "deep ocean trench glowing",
+            "submersible robotic arm abyss",
+            "like and subscribe button"
+          ],
+          "sub_prompts": [
+            "NASA satellite view of Earth orbiting over the deep Mariana Trench crescent in western Pacific",
+            "Glowing blue digital bathymetry map tracking coordinates 11 degrees North, 142 degrees East",
+            "Autonomous deep-sea exploration vehicle shining ultra-bright LED lights into infinite black ocean abyss",
+            "Cinematic glowing tactical holographic SUBSCRIBE alert over Pacific Ocean nautical grid"
+          ],
+          "sub_keywords": [
+            [
+              "satellite view pacific ocean",
+              "earth orbit satellite view",
+              "pacific ocean satellite map"
+            ],
+            [
+              "bathymetric depth map grid",
+              "sonar navigation display",
+              "digital tactical map"
+            ],
+            [
+              "deep sea exploration submersible",
+              "underwater robotic camera",
+              "deep ocean led lights"
+            ],
+            [
+              "like and subscribe button",
+              "tactical radar button",
+              "subscribe button animation"
+            ]
+          ],
+          "motion": "zoom_in",
+          "sfx": [
+            "impact_hit",
+            "deep_braam"
+          ]
+        }
+      ]
+    }
+  ]
+}

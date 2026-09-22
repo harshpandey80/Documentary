@@ -1,0 +1,234 @@
+{
+  "topic": "The Bermuda Triangle",
+  "central_open_loop": "What truly caused Flight 19 and dozens of vessels to vanish in the Bermuda Triangle?",
+  "acts": [
+    {
+      "act_number": 1,
+      "act_name": "The Impossible Vanishing",
+      "scenes": [
+        {
+          "scene_id": "act1_s1",
+          "intensity": 10,
+          "emotional_tag": "tension",
+          "narration": "Never look at what the US Navy found beneath the Bermuda Triangle. On December 5th, 1945, five military bombers vanished over the Atlantic.",
+          "ssml_narration": "<speak><prosody rate=\"+6%\" pitch=\"-1Hz\"><emphasis level=\"strong\">Never look at what the US Navy found beneath the Bermuda Triangle.</emphasis></prosody> <break time=\"150ms\"/> <prosody rate=\"+4%\" pitch=\"-2Hz\">On December 5th, 1945, five military bombers vanished over the Atlantic.</prosody></speak>",
+          "visual_prompt": "Vintage aircraft cockpit dials shaking in violent storm, red emergency alarm light, military naval aviation 1945",
+          "broll_keywords": [
+            "military aircraft flying clouds",
+            "stormy ocean aerial",
+            "dark sea storm waves",
+            "aircraft cockpit dials"
+          ],
+          "sub_prompts": [
+            "Vintage cockpit instrument panel glowing red in dark electrical storm, urgent military flight warning alert",
+            "Classified US Navy military document stamped TOP SECRET with satellite map of Bermuda Triangle ocean coordinates",
+            "Five US Navy TBM Avenger torpedo bombers flying in tight formation into pitch black Atlantic storm clouds",
+            "Violent dark Atlantic ocean waves churning in squall, eerie misty horizon"
+          ],
+          "sub_keywords": [
+            [
+              "aircraft cockpit storm gauges",
+              "red emergency light cockpit",
+              "vintage cockpit flight"
+            ],
+            [
+              "classified top secret documents",
+              "vintage military map",
+              "naval ocean coordinates"
+            ],
+            [
+              "military aircraft flying clouds",
+              "vintage bombers flight",
+              "bomber formation sky"
+            ],
+            [
+              "dark stormy ocean waves",
+              "storm sea crashing waves",
+              "aerial ocean storm"
+            ]
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "deep_braam",
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act1_s2",
+          "intensity": 9,
+          "emotional_tag": "tension",
+          "narration": "Compasses spun wildly as their commander sent one final transmission: 'Everything is wrong. Even the ocean looks strange.' Then, complete silence.",
+          "ssml_narration": "<speak><prosody rate=\"+5%\" pitch=\"-1Hz\">Compasses spun wildly as their commander sent one final transmission:</prosody> <prosody rate=\"+2%\" pitch=\"-2Hz\"><emphasis level=\"strong\">'Everything is wrong. Even the ocean looks strange.'</emphasis></prosody> <break time=\"200ms\"/> <prosody rate=\"-2%\" pitch=\"-3Hz\">Then, complete silence.</prosody></speak>",
+          "visual_prompt": "Extreme macro close-up of brass nautical compass needle spinning uncontrollably, dark electrical storm lightning",
+          "broll_keywords": [
+            "compass spinning erratic",
+            "aircraft cockpit gauges dark",
+            "stormy clouds lightning",
+            "radio static"
+          ],
+          "sub_prompts": [
+            "Macro close-up of brass magnetic naval compass needle spinning erratically out of control in cockpit",
+            "Naval pilot speaking desperately into vintage radio microphone inside shaking vibrating cockpit",
+            "Vintage radio cathode-ray oscilloscope flatline wave, green phosphor static noise, dark screen"
+          ],
+          "sub_keywords": [
+            [
+              "compass spinning erratic",
+              "magnetic compass needle dial",
+              "nautical compass"
+            ],
+            [
+              "pilot radio headset cockpit",
+              "naval radio communication",
+              "cockpit pilot storm"
+            ],
+            [
+              "radio static oscilloscope",
+              "green phosphor radar screen",
+              "static noise signal"
+            ]
+          ],
+          "motion": "zoom_in",
+          "sfx": [
+            "whoosh",
+            "radio_static_burst"
+          ]
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "act_name": "The Unexplained Abyss",
+      "scenes": [
+        {
+          "scene_id": "act2_s1",
+          "intensity": 9,
+          "emotional_tag": "reveal",
+          "narration": "A rescue plane with thirteen men took off immediately. Twenty-seven minutes later, it vanished too. Zero wreckage. Zero survivors.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"-1Hz\">A rescue plane with thirteen men took off immediately.</prosody> <break time=\"150ms\"/> <prosody rate=\"+8%\" pitch=\"+2Hz\"><emphasis level=\"strong\">Twenty-seven minutes later, it vanished too.</emphasis></prosody> <prosody rate=\"+2%\" pitch=\"-2Hz\">Zero wreckage. Zero survivors.</prosody></speak>",
+          "visual_prompt": "Massive military seaplane flying boat taking off from naval runway into dense sea mist",
+          "broll_keywords": [
+            "flying boat aircraft taking off",
+            "radar screen blip disappearing",
+            "naval searchlight ocean fog"
+          ],
+          "sub_prompts": [
+            "Massive Martin PBM Mariner flying boat rescue aircraft taking off from naval base into dense fog",
+            "Vintage green circular radar screen with glowing sweep line where aircraft blip suddenly blinks out",
+            "Naval searchlight cutting through dense freezing ocean mist at night, completely empty water surface"
+          ],
+          "sub_keywords": [
+            [
+              "flying boat aircraft taking off",
+              "military seaplane runway",
+              "rescue plane taking off"
+            ],
+            [
+              "radar screen blip disappearing",
+              "vintage military radar screen",
+              "sonar radar green sweep"
+            ],
+            [
+              "naval searchlight ocean fog",
+              "empty ocean search at night",
+              "foggy sea waves night"
+            ]
+          ],
+          "motion": "pan_left",
+          "sfx": [
+            "deep_braam",
+            "riser",
+            "radar_ping"
+          ]
+        },
+        {
+          "scene_id": "act2_s2",
+          "intensity": 8,
+          "emotional_tag": "somber",
+          "narration": "Dozens of ships and aircraft have disappeared inside this deadly vortex. Scientists blame massive rogue waves and underwater methane explosions.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"-1Hz\">Dozens of ships and aircraft have disappeared inside this deadly vortex.</prosody> <prosody rate=\"+6%\" pitch=\"+1Hz\">Scientists blame massive rogue waves and underwater methane explosions.</prosody></speak>",
+          "visual_prompt": "Enormous rogue wave rising like a black wall in dark stormy ocean, deep underwater abyss bubbles",
+          "broll_keywords": [
+            "underwater shipwreck ocean floor",
+            "massive rogue wave ocean",
+            "underwater methane bubbles ocean"
+          ],
+          "sub_prompts": [
+            "Sunken historical steel shipwreck resting on dark abyssal ocean floor with underwater marine drift",
+            "Terrifying 100-foot rogue wave rising like a massive black wall of water in violent stormy ocean",
+            "Deep seabed volcanic rift erupting with colossal methane gas bubbles bursting toward dark surface"
+          ],
+          "sub_keywords": [
+            [
+              "underwater shipwreck ocean floor",
+              "sunken ship abyss",
+              "deep ocean wreck"
+            ],
+            [
+              "massive rogue wave ocean",
+              "giant wave crashing sea",
+              "storm ocean wall of water"
+            ],
+            [
+              "underwater methane bubbles ocean",
+              "seabed hydrothermal vent gas",
+              "underwater explosion bubbles"
+            ]
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "sub_impact",
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act2_s3",
+          "intensity": 10,
+          "emotional_tag": "tension",
+          "narration": "Yet modern satellites still detect unexplained magnetic distortions deep beneath the seabed. Which is why navy pilots are still warned... Like and subscribe to uncover the unsealed files.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"-1Hz\">Yet modern satellites still detect unexplained magnetic distortions deep beneath the seabed.</prosody> <break time=\"150ms\"/> <prosody rate=\"+8%\" pitch=\"+2Hz\"><emphasis level=\"strong\">Which is why navy pilots are still warned...</emphasis></prosody> <break time=\"200ms\"/> <prosody rate=\"+6%\" pitch=\"+1Hz\"><emphasis level=\"strong\">Like and subscribe to uncover the unsealed files.</emphasis></prosody></speak>",
+          "visual_prompt": "Glowing satellite bathymetry scan of the Bermuda Triangle showing deep ocean floor trenches and magnetic anomalies",
+          "broll_keywords": [
+            "satellite earth ocean view",
+            "deep ocean underwater trench",
+            "pilot silhouette cockpit window",
+            "like and subscribe button"
+          ],
+          "sub_prompts": [
+            "NASA satellite orbiting planet Earth with glowing blue bathymetry depth grid over Bermuda Triangle",
+            "Deep underwater oceanic trench with glowing blue magnetic field distortion lines and sonar pulses",
+            "Military naval pilot silhouette looking out cockpit canopy into endless dark Atlantic abyss at night",
+            "High-tech tactical naval combat display with glowing holographic LIKE & SUBSCRIBE radar button alert over Bermuda Triangle coordinates"
+          ],
+          "sub_keywords": [
+            [
+              "satellite earth ocean view",
+              "satellite orbiting earth space",
+              "ocean bathymetry scan map"
+            ],
+            [
+              "deep ocean underwater trench",
+              "sonar pulse deep water",
+              "mysterious blue ocean abyss"
+            ],
+            [
+              "pilot silhouette cockpit window",
+              "military pilot looking out",
+              "dark ocean horizon clouds"
+            ],
+            [
+              "like and subscribe button",
+              "tactical radar alert subscribe",
+              "subscribe graphic animation"
+            ]
+          ],
+          "motion": "zoom_in",
+          "sfx": [
+            "impact_hit",
+            "deep_braam"
+          ]
+        }
+      ]
+    }
+  ]
+}

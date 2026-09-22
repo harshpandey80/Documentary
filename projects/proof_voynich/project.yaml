@@ -1,0 +1,27 @@
+topic: "The Voynich Cipher"
+thesis: "The 600-year-old Voynich manuscript exhibits the statistical signature of genuine human language rather than random medieval gibberish."
+audience: "Investigative documentary and history audience"
+tone: "Investigative, cerebral, atmospheric, fast-paced"
+runtime: "48s"
+aspect_ratio: "9:16"
+cut_length: 2.2
+tts_engine: "edge_tts"
+script_path: "projects/proof_voynich/script.json"
+color_grade_preset: "archival_warm"
+question: "Why has no cryptographer cracked the 15th-century Voynich manuscript?"
+answer_claim_id: "CLM-VOY-004"
+twist: "Statistical linguistic entropy proves it follows natural language laws rather than medieval random gibberish."
+visual_tiers:
+  - "archival"
+  - "code2video"
+  - "ai_hero"
+  - "stock"
+style_profile:
+  font_primary: "Montserrat"
+  font_accent: "Cinzel"
+  color_primary: "#FFFFFF"
+  color_accent: "#00FF66"
+  color_bg: "#0A0D14"
+  caption_style: "hormozi"
+graphic_budget: 12
+allow_unverified_claims: true

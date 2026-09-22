@@ -1,0 +1,29 @@
+# DocStudio Production Project Configuration
+topic: "The Mariana Trench 36,000-Foot Anomaly"
+thesis: "Acoustic hydrophone telemetry at 10,994 meters registered non-biological metallic oscillations that unsealed naval inquiries failed to classify."
+audience: "Investigative documentary and science history viewers"
+tone: "Cold, clinical, forensic, tense"
+runtime: "5m"
+aspect_ratio: "16:9"
+cut_length: 3.0
+tts_engine: "voxcpm"
+visual_tiers:
+  - archival
+  - ai_hero
+  - code2video
+  - stock
+style_profile:
+  font_primary: "Montserrat"
+  font_accent: "Cinzel"
+  color_primary: "#FFFFFF"
+  color_accent: "#00FF66"
+  color_bg: "#080C10"
+  easing: "ease_out_cubic"
+graphic_budget: 18
+allow_unverified_claims: false
+custom_telemetry:
+  location: "Challenger Deep, Mariana Trench"
+  coordinates: "11°22.4'N 142°35.5'E"
+  depth: "10,994m (36,070 ft)"
+  pressure: "1,086 bar"
+  frequency: "14.8 kHz"

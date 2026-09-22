@@ -1,0 +1,148 @@
+{
+  "topic": "History of England: The 2000-Year Empire",
+  "question": "How did this tiny island conquer twenty-four percent of Earth?",
+  "answer_claim_id": "CLM-ENG-005",
+  "twist": "Its true conquest was not land, but global legal, industrial, and linguistic architecture that outlived the empire itself.",
+  "central_open_loop": "How did an isolated rainy island expand to govern twenty-four percent of the globe?",
+  "acts": [
+    {
+      "act_number": 1,
+      "act_name": "The Invasions",
+      "scenes": [
+        {
+          "scene_id": "england_s1",
+          "intensity": 9,
+          "emotional_tag": "tension",
+          "narration": "How did this tiny island conquer twenty-four percent of Earth?",
+          "ssml_narration": "<prosody rate='+25%'>How did this tiny island conquer twenty-four percent of Earth?</prosody>",
+          "visual_prompt": "Antique Victorian British Empire world map in deep crimson red, dramatic macro camera drifting over global sea lanes, archival parchment textures",
+          "broll_keywords": ["british empire map", "world map 1897", "archival globe", "imperial navigation"],
+          "motion": "zoom_in",
+          "sfx": ["deep_braam", "whoosh"]
+        },
+        {
+          "scene_id": "england_s2",
+          "intensity": 8,
+          "emotional_tag": "somber",
+          "narration": "Two thousand years ago, Roman legions seized Britannia.",
+          "ssml_narration": "<prosody rate='+25%'>Two thousand years ago, Roman legions seized Britannia.</prosody>",
+          "visual_prompt": "Authentic ancient Roman bronze coin of Britannia and rusted gladius sword buried in muddy English soil, dramatic moody volumetric lighting",
+          "broll_keywords": ["roman britannia coin", "roman gladius sword", "hadrian wall excavation", "ancient roman archaeology"],
+          "motion": "zoom_punch",
+          "sfx": ["sword_clash", "sub_bass_pulse"]
+        },
+        {
+          "scene_id": "england_s3",
+          "intensity": 7,
+          "emotional_tag": "ambient_drone",
+          "narration": "Then Norse raiders struck, until Saxon kings unified the realm.",
+          "ssml_narration": "<prosody rate='+25%'>Then Norse raiders struck, until Saxon kings unified the realm.</prosody>",
+          "visual_prompt": "Viking longship prow carving through stormy gray North Sea waves approaching foggy English coastline, dramatic cinematic lighting, 8k realistic documentary",
+          "broll_keywords": ["viking longship", "stormy north sea", "saxon england", "anglo saxon history"],
+          "motion": "pan_left",
+          "sfx": ["ocean_swell", "thunder"]
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "act_name": "The Institutional Core",
+      "scenes": [
+        {
+          "scene_id": "england_s4",
+          "intensity": 8,
+          "emotional_tag": "tension",
+          "narration": "In ten sixty-six, Norman conquest forged England's legal spine.",
+          "ssml_narration": "<prosody rate='+25%'>In ten sixty-six, Norman conquest forged England's legal spine.</prosody>",
+          "visual_prompt": "Authentic Bayeux Tapestry 1066 embroidered linen depiction of armored Norman cavalry charging at Hastings, macro 35mm archival detail",
+          "broll_keywords": ["bayeux tapestry", "battle of hastings 1066", "norman knights", "medieval embroidery"],
+          "motion": "pan_right",
+          "sfx": ["tape_start", "whoosh"]
+        },
+        {
+          "scene_id": "england_s5",
+          "intensity": 7,
+          "emotional_tag": "reveal",
+          "narration": "In twelve fifteen, the Magna Carta stripped kings of absolute power.",
+          "ssml_narration": "<prosody rate='+25%'>In twelve fifteen, the Magna Carta stripped kings of absolute power.</prosody>",
+          "visual_prompt": "Original 1215 Magna Carta parchment manuscript illuminated with wax Great Seal, warm archival lighting in ancient stone vault",
+          "broll_keywords": ["magna carta 1215", "wax seal parchment", "british library archives", "historical manuscript"],
+          "motion": "zoom_in",
+          "sfx": ["paper_shuffle", "cinematic_hit"]
+        },
+        {
+          "scene_id": "england_s6",
+          "intensity": 9,
+          "emotional_tag": "tension",
+          "narration": "By fifteen eighty-eight, Tudor warships defeated the Spanish Armada.",
+          "ssml_narration": "<prosody rate='+25%'>By fifteen eighty-eight, Tudor warships defeated the Spanish Armada.</prosody>",
+          "visual_prompt": "Historic 1588 naval engraving of English galleons firing cannons at the Spanish Armada in burning stormy channel waters, dramatic documentary",
+          "broll_keywords": ["spanish armada 1588", "tudor naval battle", "galleon cannon fire", "national maritime museum"],
+          "motion": "zoom_punch",
+          "sfx": ["cannon_blast", "deep_braam"]
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "act_name": "The Global Machine",
+      "scenes": [
+        {
+          "scene_id": "england_s7",
+          "intensity": 8,
+          "emotional_tag": "reveal",
+          "narration": "Then steam engines turned Britain into the workshop of the world.",
+          "ssml_narration": "<prosody rate='+25%'>Then steam engines turned Britain into the workshop of the world.</prosody>",
+          "visual_prompt": "Massive 19th-century Industrial Revolution iron foundry with glowing molten steel, steam pistons, and roaring blast furnaces, dramatic sparks",
+          "broll_keywords": ["industrial revolution", "steam foundry", "19th century steam", "blast furnace iron"],
+          "motion": "pan_left",
+          "sfx": ["steam_burst", "gear_turn"]
+        },
+        {
+          "scene_id": "england_s8",
+          "intensity": 9,
+          "emotional_tag": "triumphant",
+          "narration": "Thirty-five million square kilometers fell under one crown.",
+          "ssml_narration": "<prosody rate='+25%'>Thirty-five million square kilometers fell under one crown.</prosody>",
+          "visual_prompt": "3D telemetry holographic globe showing the vast expanse of the British Empire spanning North America, Africa, India, and Australia",
+          "broll_keywords": ["telemetry globe", "british empire territory", "data map animation", "holographic world"],
+          "motion": "zoom_in",
+          "sfx": ["riser", "digital_beep"]
+        },
+        {
+          "scene_id": "england_s9",
+          "intensity": 7,
+          "emotional_tag": "somber",
+          "narration": "Two world wars broke the empire, but its conquest never died.",
+          "ssml_narration": "<prosody rate='+25%'>Two world wars broke the empire, but its conquest never died.</prosody>",
+          "visual_prompt": "London Blitz 1940 authentic monochrome historical archive photograph of searchlights illuminating night sky over St Paul cathedral dome",
+          "broll_keywords": ["london blitz 1940", "st paul searchlights", "world war 2 archive", "imperial war museum"],
+          "motion": "pan_right",
+          "sfx": ["air_raid_siren", "sub_drop"]
+        },
+        {
+          "scene_id": "england_s10",
+          "intensity": 9,
+          "emotional_tag": "reveal",
+          "narration": "Parliamentary law, global trade, and two billion speakers still anchor modern civilization.",
+          "ssml_narration": "<prosody rate='+25%'>Parliamentary law, global trade, and two billion speakers still anchor modern civilization.</prosody>",
+          "visual_prompt": "Modern London skyline at blue twilight with Houses of Parliament, illuminated Big Ben clock tower, and financial district glowing",
+          "broll_keywords": ["houses of parliament", "london skyline twilight", "westminster palace", "modern london"],
+          "motion": "zoom_punch",
+          "sfx": ["braam_epic", "cinematic_hit"]
+        },
+        {
+          "scene_id": "england_s11",
+          "intensity": 10,
+          "emotional_tag": "reveal",
+          "narration": "Like and subscribe to uncover the unsealed files.",
+          "ssml_narration": "<prosody rate='+25%'>Like and subscribe to uncover the unsealed files.</prosody>",
+          "visual_prompt": "Sleek obsidian channel outro card with glowing neon green verified crest and unsealed files watermark",
+          "broll_keywords": ["channel outro", "subscribe", "verified files", "unsealed files"],
+          "motion": "subtle_drift",
+          "sfx": ["hit_short"]
+        }
+      ]
+    }
+  ]
+}

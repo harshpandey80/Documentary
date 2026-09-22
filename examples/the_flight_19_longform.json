@@ -1,0 +1,390 @@
+{
+  "topic": "Flight 19",
+  "central_open_loop": "What truly happened during Flight 19 that military authorities and official records concealed from the world for decades?",
+  "acts": [
+    {
+      "act_number": 1,
+      "act_name": "The Cold-Open Hook",
+      "scenes": [
+        {
+          "scene_id": "act1_s1",
+          "intensity": 10,
+          "emotional_tag": "tension",
+          "narration": "At precisely twelve minutes past midnight, deep within an unindexed military installation, the emergency alarms triggered across every console simultaneously. On the primary radar display, an unidentified contact appeared out of nowhere, hovered motionless for four seconds, and then vanished. [PAUSE:0.4s] Then, the entire monitoring grid went pitch black.",
+          "ssml_narration": "<speak><prosody rate=\"-10%\" pitch=\"-4Hz\">At precisely twelve minutes past midnight, deep within an unindexed military installation, the emergency alarms triggered across every console simultaneously.</prosody> <prosody rate=\"-6%\" pitch=\"-2Hz\">On the primary radar display, an unidentified contact appeared out of nowhere, hovered motionless for four seconds, and then vanished.</prosody> <break time=\"400ms\"/> <prosody rate=\"+6%\" pitch=\"+2Hz\"><emphasis level=\"strong\">Then, the entire monitoring grid went pitch black.</emphasis></prosody></speak>",
+          "visual_prompt": "Dark military bunker control room, green CRT radar display showing sudden blip, red warning klaxons spinning, cinematic 16:9 4k",
+          "broll_keywords": [
+            "radar screen blip",
+            "military bunker control room",
+            "emergency red lights alert"
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "deep_braam",
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act1_s2",
+          "intensity": 9,
+          "emotional_tag": "tension",
+          "narration": "There was no Mayday broadcast. There was no distress frequency opened. When air traffic controllers frantically called back on the emergency guard channel, all they heard was dead silence, followed by an eerie, modulated electronic hum that didn't match any known aircraft.",
+          "ssml_narration": "<speak><prosody rate=\"-8%\" pitch=\"-3Hz\">There was no Mayday broadcast. There was no distress frequency opened.</prosody> <prosody rate=\"-4%\" pitch=\"-1Hz\">When air traffic controllers frantically called back on the emergency guard channel, all they heard was dead silence, followed by an eerie, modulated electronic hum that didn't match any known aircraft.</prosody></speak>",
+          "visual_prompt": "Close-up of vintage oscilloscope waveform glowing green in dark cockpit, static electrical interference, macro anamorphic lens",
+          "broll_keywords": [
+            "oscilloscope waveform monitor",
+            "vintage radio headset",
+            "static frequency radio"
+          ],
+          "motion": "zoom_in",
+          "sfx": [
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act1_s3",
+          "intensity": 8,
+          "emotional_tag": "ambient_drone",
+          "narration": "By sunrise, naval ships and reconnaissance aircraft were scouring the desolate expanse. But beneath the calm waves, there was zero wreckage, zero fuel slicks, and zero human survivors. This was the beginning of the mystery that would become known as Flight 19.",
+          "ssml_narration": "<speak><prosody rate=\"-6%\" pitch=\"-2Hz\">By sunrise, naval ships and reconnaissance aircraft were scouring the desolate expanse.</prosody> <break time=\"400ms\"/> <prosody rate=\"+0%\" pitch=\"+0Hz\">But beneath the calm waves, there was zero wreckage, zero fuel slicks, and zero human survivors. This was the beginning of the mystery that would become known as Flight 19.</prosody></speak>",
+          "visual_prompt": "Vast open ocean under cold grey morning skies, lone search and rescue vessel in distance, atmospheric sea mist, cinematic wide shot",
+          "broll_keywords": [
+            "ocean rescue ship",
+            "foggy sea searchlights",
+            "aerial ocean horizon"
+          ],
+          "motion": "subtle_drift",
+          "sfx": []
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "act_name": "The Setup & Status Quo",
+      "scenes": [
+        {
+          "scene_id": "act2_s1",
+          "intensity": 3,
+          "emotional_tag": "ambient_drone",
+          "narration": "To understand how this catastrophic event transpired, we have to look back at how impeccably ordinary everything appeared just hours earlier. On paper, the mission was deemed routine, fully cleared by every regulatory agency, and staffed by some of the most decorated veterans in the service.",
+          "ssml_narration": "<speak><prosody rate=\"-2%\" pitch=\"-1Hz\">To understand how this catastrophic event transpired, we have to look back at how impeccably ordinary everything appeared just hours earlier.</prosody> <prosody rate=\"+0%\" pitch=\"+0Hz\">On paper, the mission was deemed routine, fully cleared by every regulatory agency, and staffed by some of the most decorated veterans in the service.</prosody></speak>",
+          "visual_prompt": "Archival dossier on wooden desk, black and white photographs of military personnel in uniform, mission flight logbook open, soft vintage tungsten lighting",
+          "broll_keywords": [
+            "archival documents desk",
+            "vintage flight logbook",
+            "military personnel archive"
+          ],
+          "motion": "pan_left",
+          "sfx": []
+        },
+        {
+          "scene_id": "act2_s2",
+          "intensity": 3,
+          "emotional_tag": "somber",
+          "narration": "The pre-departure maintenance logs confirm that every single mechanical, electrical, and hydraulic subsystem had been thoroughly inspected. The telemetry recorders were calibrated, fuel tanks were completely topped off, and meteorological forecasts projected glass-smooth skies for hundreds of miles in every direction.",
+          "ssml_narration": "<speak><prosody rate=\"+0%\" pitch=\"+0Hz\">The pre-departure maintenance logs confirm that every single mechanical, electrical, and hydraulic subsystem had been thoroughly inspected. The telemetry recorders were calibrated, fuel tanks were completely topped off, and meteorological forecasts projected glass-smooth skies for hundreds of miles in every direction.</prosody></speak>",
+          "visual_prompt": "Vintage hangar floor, ground crew inspecting aircraft instruments with flashlights, blueprints laid out, atmospheric dust particles",
+          "broll_keywords": [
+            "hangar ground crew aircraft",
+            "vintage aircraft cockpit check",
+            "meteorological weather map vintage"
+          ],
+          "motion": "subtle_drift",
+          "sfx": []
+        },
+        {
+          "scene_id": "act2_s3",
+          "intensity": 4,
+          "emotional_tag": "ambient_drone",
+          "narration": "Those who spoke to the crew in their final briefing noted that morale was high. There was no hesitation, no apprehension, and absolutely no inkling of danger. Yet, buried deep within the auxiliary flight log, a single handwritten note was found decades later, stating simply: the instruments are fluctuating before we have even departed.",
+          "ssml_narration": "<speak><prosody rate=\"-2%\" pitch=\"-1Hz\">Those who spoke to the crew in their final briefing noted that morale was high. There was no hesitation, no apprehension, and absolutely no inkling of danger.</prosody> <break time=\"400ms\"/> <prosody rate=\"-6%\" pitch=\"-3Hz\">Yet, buried deep within the auxiliary flight log, a single handwritten note was found decades later, stating simply: the instruments are fluctuating before we have even departed.</prosody></speak>",
+          "visual_prompt": "Yellowed vintage paper with blurred handwritten ink, fountain pen resting beside classified stamp, close macro photography",
+          "broll_keywords": [
+            "vintage handwritten letter",
+            "yellowed paper archive",
+            "fountain pen confidential notes"
+          ],
+          "motion": "zoom_in",
+          "sfx": [
+            "whoosh"
+          ]
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "act_name": "The First Anomaly & Escalation",
+      "scenes": [
+        {
+          "scene_id": "act3_s1",
+          "intensity": 5,
+          "emotional_tag": "tension",
+          "narration": "Forty-two minutes into the journey, the flight crossed the outer perimeter of civilian radar coverage. It was here that the first inexplicable telemetry distortion was recorded. The gyro-compasses, designed to maintain alignment through magnetic field anomalies, began rotating violently in complete 360-degree cycles.",
+          "ssml_narration": "<speak><prosody rate=\"+2%\" pitch=\"+1Hz\">Forty-two minutes into the journey, the flight crossed the outer perimeter of civilian radar coverage.</prosody> <prosody rate=\"-4%\" pitch=\"-2Hz\">It was here that the first inexplicable telemetry distortion was recorded. The gyro-compasses, designed to maintain alignment through magnetic field anomalies, began rotating violently in complete 360-degree cycles.</prosody></speak>",
+          "visual_prompt": "Aircraft cockpit compass dial spinning erratically under green night illumination, turbulent altimeter needle fluttering, intense cinematic drama",
+          "broll_keywords": [
+            "spinning airplane compass",
+            "cockpit gauges night",
+            "altimeter dial turbulence"
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "riser"
+          ]
+        },
+        {
+          "scene_id": "act3_s2",
+          "intensity": 6,
+          "emotional_tag": "tension",
+          "narration": "Radio communications with the regional control sector became rapidly degraded by heavy broadband static. The flight commander was heard asking if the sun had set in the wrong direction, reporting that the stars above their position did not correspond to any known navigational constellation.",
+          "ssml_narration": "<speak><prosody rate=\"-4%\" pitch=\"-2Hz\">Radio communications with the regional control sector became rapidly degraded by heavy broadband static.</prosody> <break time=\"400ms\"/> <prosody rate=\"-8%\" pitch=\"-4Hz\">The flight commander was heard asking if the sun had set in the wrong direction, reporting that the stars above their position did not correspond to any known navigational constellation.</prosody></speak>",
+          "visual_prompt": "Dark cockpit canopy looking out at distorted night sky with unfamiliar glowing constellations, static light interference, 16:9 cinematic",
+          "broll_keywords": [
+            "night cockpit window stars",
+            "radio static transmission tower",
+            "vintage air traffic controller"
+          ],
+          "motion": "pan_right",
+          "sfx": [
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act3_s3",
+          "intensity": 6,
+          "emotional_tag": "tension",
+          "narration": "Back on the mainland, air defense tracking stations picked up a secondary echo trailing directly behind the aircraft. It was traveling at an impossible airspeed, matching every evasive maneuver the flight attempted, before suddenly splitting into two distinct radar returns.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"+1Hz\">Back on the mainland, air defense tracking stations picked up a secondary echo trailing directly behind the aircraft.</prosody> <prosody rate=\"-6%\" pitch=\"-3Hz\">It was traveling at an impossible airspeed, matching every evasive maneuver the flight attempted, before suddenly splitting into two distinct radar returns.</prosody></speak>",
+          "visual_prompt": "Cold War military radar scope with two glowing phosphorescent blips converging, dimly lit bunker, tense officers looking on",
+          "broll_keywords": [
+            "radar scope blips military",
+            "cold war radar room",
+            "air defense radar screen"
+          ],
+          "motion": "zoom_in",
+          "sfx": []
+        }
+      ]
+    },
+    {
+      "act_number": 4,
+      "act_name": "The Midpoint Twist & Hidden Dossier",
+      "scenes": [
+        {
+          "scene_id": "act4_s1",
+          "intensity": 7,
+          "emotional_tag": "reveal",
+          "narration": "For over thirty years, the public was told that Flight 19 was the unfortunate result of pilot disorientation and sudden severe weather. But in 2004, a mandatory declassification order unsealed thousands of pages from the naval intelligence vault, exposing the cover-up.",
+          "ssml_narration": "<speak><prosody rate=\"-4%\" pitch=\"-2Hz\">For over thirty years, the public was told that Flight 19 was the unfortunate result of pilot disorientation and sudden severe weather.</prosody> <break time=\"400ms\"/> <prosody rate=\"+6%\" pitch=\"+2Hz\"><emphasis level=\"strong\">But in 2004, a mandatory declassification order unsealed thousands of pages from the naval intelligence vault, exposing the cover-up.</emphasis></prosody></speak>",
+          "visual_prompt": "Declassified government file stamped TOP SECRET with red wax seal and bold red stamps, heavy black marker redactions across text, dramatic spotlight",
+          "broll_keywords": [
+            "top secret declassified document",
+            "redacted government files",
+            "intelligence archive dossier"
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "deep_braam"
+          ]
+        },
+        {
+          "scene_id": "act4_s2",
+          "intensity": 8,
+          "emotional_tag": "reveal",
+          "narration": "Among the unredacted files was a transcript from a classified submarine listening post located eight hundred miles away. Hydrophones on the ocean floor had detected an intense acoustic pulse, registering at over two hundred decibels, originating from the exact coordinates where the flight vanished.",
+          "ssml_narration": "<speak><prosody rate=\"-2%\" pitch=\"-1Hz\">Among the unredacted files was a transcript from a classified submarine listening post located eight hundred miles away.</prosody> <prosody rate=\"-6%\" pitch=\"-3Hz\">Hydrophones on the ocean floor had detected an intense acoustic pulse, registering at over two hundred decibels, originating from the exact coordinates where the flight vanished.</prosody></speak>",
+          "visual_prompt": "Submarine sonar operator in dimly lit red control room, glowing green circular sonar screen, headphones, intense focus",
+          "broll_keywords": [
+            "submarine sonar room",
+            "underwater hydrophone recording",
+            "deep sea acoustic sensors"
+          ],
+          "motion": "pan_left",
+          "sfx": [
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act4_s3",
+          "intensity": 7,
+          "emotional_tag": "somber",
+          "narration": "Even more chilling, the naval log revealed that two specialized interceptor jets had been scrambled thirty minutes prior to the disappearance, operating under an order that bypassed standard civilian channels entirely: find the craft, observe from maximum range, and do not engage.",
+          "ssml_narration": "<speak><prosody rate=\"-6%\" pitch=\"-3Hz\">Even more chilling, the naval log revealed that two specialized interceptor jets had been scrambled thirty minutes prior to the disappearance,</prosody> <prosody rate=\"-10%\" pitch=\"-4Hz\">operating under an order that bypassed standard civilian channels entirely: find the craft, observe from maximum range, and do not engage.</prosody></speak>",
+          "visual_prompt": "Two jet fighters parked on wet runway tarmac at night under floodlights, ground crew running, steam rising from asphalt",
+          "broll_keywords": [
+            "military jets night runway",
+            "fighter jets scrambling",
+            "wet runway floodlights"
+          ],
+          "motion": "subtle_drift",
+          "sfx": []
+        }
+      ]
+    },
+    {
+      "act_number": 5,
+      "act_name": "The Climax & System Collapse",
+      "scenes": [
+        {
+          "scene_id": "act5_s1",
+          "intensity": 10,
+          "emotional_tag": "tension",
+          "narration": "At zero-zero-fifty-five hours, the climax of the incident unfolded. The flight recorder's telemetry signal suddenly registered an unrecoverable electrical surge, blowing out every circuit breaker in the cockpit in less than half a second.",
+          "ssml_narration": "<speak><prosody rate=\"+4%\" pitch=\"+1Hz\">At zero-zero-fifty-five hours, the climax of the incident unfolded.</prosody> <break time=\"400ms\"/> <prosody rate=\"+8%\" pitch=\"+3Hz\"><emphasis level=\"strong\">The flight recorder's telemetry signal suddenly registered an unrecoverable electrical surge, blowing out every circuit breaker in the cockpit in less than half a second.</emphasis></prosody></speak>",
+          "visual_prompt": "Cockpit electrical instrument panel sparking violently in darkness, instrument needles pinned to maximum, blinding electrical flash, cinematic slow motion",
+          "broll_keywords": [
+            "electrical spark cockpit failure",
+            "avionics instruments overload",
+            "catastrophic aircraft failure"
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "riser",
+            "deep_braam"
+          ]
+        },
+        {
+          "scene_id": "act5_s2",
+          "intensity": 9,
+          "emotional_tag": "tension",
+          "narration": "The final fractured transmission from the cockpit contained only six words, spoken through severe electromagnetic interference: We are entering the cloud now. There is no horizon. Immediately following those words, all telemetry flatlined across the hemisphere.",
+          "ssml_narration": "<speak><prosody rate=\"-6%\" pitch=\"-3Hz\">The final fractured transmission from the cockpit contained only six words, spoken through severe electromagnetic interference:</prosody> <prosody rate=\"-12%\" pitch=\"-5Hz\"><emphasis level=\"strong\">We are entering the cloud now. There is no horizon.</emphasis></prosody> <prosody rate=\"-4%\" pitch=\"-2Hz\">Immediately following those words, all telemetry flatlined across the hemisphere.</prosody></speak>",
+          "visual_prompt": "Dense impenetrable vortex of clouds at night, lightning flashes illuminating strange geometric shapes within mist, cinematic 4k",
+          "broll_keywords": [
+            "dark storm clouds lightning",
+            "night sky storm vortex",
+            "mysterious cloud formation"
+          ],
+          "motion": "zoom_in",
+          "sfx": [
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act5_s3",
+          "intensity": 8,
+          "emotional_tag": "somber",
+          "narration": "Within minutes, the secondary radar contact disappeared as well, leaving nothing on the military consoles except ambient thermal noise. The entire search operation that followed was merely theater: authorities already knew that what occurred was completely beyond their ability to explain or recover.",
+          "ssml_narration": "<speak><prosody rate=\"-6%\" pitch=\"-3Hz\">Within minutes, the secondary radar contact disappeared as well, leaving nothing on the military consoles except ambient thermal noise.</prosody> <prosody rate=\"-4%\" pitch=\"-1Hz\">The entire search operation that followed was merely theater: authorities already knew that what occurred was completely beyond their ability to explain or recover.</prosody></speak>",
+          "visual_prompt": "Empty ocean surface at sunrise, waves rolling gently with no sign of human presence, cold cinematic melancholy",
+          "broll_keywords": [
+            "calm ocean sunrise empty",
+            "barren sea horizon",
+            "ocean waves desolate"
+          ],
+          "motion": "subtle_drift",
+          "sfx": []
+        }
+      ]
+    },
+    {
+      "act_number": 6,
+      "act_name": "Forensic Resolution & The Cover-Up",
+      "scenes": [
+        {
+          "scene_id": "act6_s1",
+          "intensity": 4,
+          "emotional_tag": "somber",
+          "narration": "In the weeks following the catastrophe, an official investigative board was convened behind locked doors. Witnesses were required to sign lifetime nondisclosure agreements, and the physical radar magnetic tapes from that night were confiscated by federal agents.",
+          "ssml_narration": "<speak><prosody rate=\"-4%\" pitch=\"-2Hz\">In the weeks following the catastrophe, an official investigative board was convened behind locked doors. Witnesses were required to sign lifetime nondisclosure agreements, and the physical radar magnetic tapes from that night were confiscated by federal agents.</prosody></speak>",
+          "visual_prompt": "Heavy wooden boardroom table with closed manila folders, nameplates, dim overhead lighting, atmospheric shadows, cinematic vintage look",
+          "broll_keywords": [
+            "confidential boardroom inquiry",
+            "manila envelopes classified",
+            "vintage government hearing"
+          ],
+          "motion": "pan_left",
+          "sfx": []
+        },
+        {
+          "scene_id": "act6_s2",
+          "intensity": 4,
+          "emotional_tag": "somber",
+          "narration": "The formal public report attributed the loss to unknown navigational confusion. But forensic investigators who reviewed the unredacted documents found that three separate pages containing the hydrophone acoustic analysis had been razor-blade sliced directly out of the master binder.",
+          "ssml_narration": "<speak><prosody rate=\"-2%\" pitch=\"-1Hz\">The formal public report attributed the loss to unknown navigational confusion.</prosody> <break time=\"400ms\"/> <prosody rate=\"-6%\" pitch=\"-3Hz\">But forensic investigators who reviewed the unredacted documents found that three separate pages containing the hydrophone acoustic analysis had been razor-blade sliced directly out of the master binder.</prosody></speak>",
+          "visual_prompt": "Archival binder open to jagged cut paper edges where pages were sliced out with razor, magnifying glass focusing on cut marks",
+          "broll_keywords": [
+            "razor cut document pages",
+            "missing archival records",
+            "government archive mystery"
+          ],
+          "motion": "zoom_in",
+          "sfx": [
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act6_s3",
+          "intensity": 5,
+          "emotional_tag": "ambient_drone",
+          "narration": "Independent scientists who modeled the magnetic disturbance suggested that an extreme localized ionospheric collapse or an unacknowledged deep-sea energy test could have produced the exact symptoms described in the final radio transmission.",
+          "ssml_narration": "<speak><prosody rate=\"-2%\" pitch=\"-1Hz\">Independent scientists who modeled the magnetic disturbance suggested that an extreme localized ionospheric collapse or an unacknowledged deep-sea energy test could have produced the exact symptoms described in the final radio transmission.</prosody></speak>",
+          "visual_prompt": "Scientific computer simulation displaying earth magnetosphere field lines fluctuating wildly, 3D wireframe globe, technical diagrams",
+          "broll_keywords": [
+            "magnetosphere simulation 3D",
+            "scientific earth wireframe",
+            "atmospheric physics diagram"
+          ],
+          "motion": "subtle_drift",
+          "sfx": []
+        }
+      ]
+    },
+    {
+      "act_number": 7,
+      "act_name": "The Modern Aftermath & Lingering Echo",
+      "scenes": [
+        {
+          "scene_id": "act7_s1",
+          "intensity": 6,
+          "emotional_tag": "reveal",
+          "narration": "Today, modern satellite constellations sweep across those exact ocean coordinates thousands of times each year. And yet, pilots and oceanographers quietly report that digital navigation systems still experience unexplained GPS drift when traversing that precise geographical corridor.",
+          "ssml_narration": "<speak><prosody rate=\"-4%\" pitch=\"-2Hz\">Today, modern satellite constellations sweep across those exact ocean coordinates thousands of times each year.</prosody> <break time=\"400ms\"/> <prosody rate=\"+4%\" pitch=\"+1Hz\">And yet, pilots and oceanographers quietly report that digital navigation systems still experience unexplained GPS drift when traversing that precise geographical corridor.</prosody></speak>",
+          "visual_prompt": "Modern satellite in low earth orbit passing over blue planet, digital telemetry overlays, subtle lens flare, cinematic 16:9",
+          "broll_keywords": [
+            "satellite orbit earth modern",
+            "gps navigation telemetry map",
+            "earth from space cinematic"
+          ],
+          "motion": "zoom_out",
+          "sfx": [
+            "whoosh"
+          ]
+        },
+        {
+          "scene_id": "act7_s2",
+          "intensity": 7,
+          "emotional_tag": "tension",
+          "narration": "The full classified files regarding Flight 19 are scheduled to remain sealed until the end of this century. But whether this was an encounter with an unknown atmospheric phenomenon, an unacknowledged military black project, or something far stranger, one fact remains uncontested.",
+          "ssml_narration": "<speak><prosody rate=\"-4%\" pitch=\"-2Hz\">The full classified files regarding Flight 19 are scheduled to remain sealed until the end of this century.</prosody> <prosody rate=\"-8%\" pitch=\"-4Hz\">But whether this was an encounter with an unknown atmospheric phenomenon, an unacknowledged military black project, or something far stranger, one fact remains uncontested.</prosody></speak>",
+          "visual_prompt": "Concrete military archive underground vault door locked with heavy mechanical wheels, dramatic rim lighting, dust motes drifting",
+          "broll_keywords": [
+            "military archive vault locked",
+            "classified government vault",
+            "concrete underground bunker"
+          ],
+          "motion": "subtle_drift",
+          "sfx": []
+        },
+        {
+          "scene_id": "act7_s3",
+          "intensity": 8,
+          "emotional_tag": "reveal",
+          "narration": "Whatever happened out there in the dark... they were never truly alone. [PAUSE:0.4s] Click the video on your screen right now to uncover the declassified recordings they never wanted you to hear.",
+          "ssml_narration": "<speak><prosody rate=\"-10%\" pitch=\"-4Hz\">Whatever happened out there in the dark... they were never truly alone.</prosody> <break time=\"400ms\"/> <prosody rate=\"+6%\" pitch=\"+2Hz\"><emphasis level=\"strong\">Click the video on your screen right now to uncover the declassified recordings they never wanted you to hear.</emphasis></prosody></speak>",
+          "visual_prompt": "Dark silhouette looking into an illuminated control room monitor displaying glowing geographical coordinates, cinematic YouTube outro framing 16:9",
+          "broll_keywords": [
+            "cinematic outro silhouette",
+            "glowing coordinates monitor",
+            "mysterious dark control room"
+          ],
+          "motion": "zoom_punch",
+          "sfx": [
+            "deep_braam",
+            "whoosh"
+          ]
+        }
+      ]
+    }
+  ]
+}
