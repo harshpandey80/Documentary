@@ -53,6 +53,7 @@ class ProjectConfig:
     cut_length: float = 3.0
     tts_engine: str = "voxcpm"
     visual_tiers: List[str] = field(default_factory=lambda: ["archival", "ai_hero", "code2video", "stock"])
+    all_ai_visuals: bool = True
     style_profile: StyleProfile = field(default_factory=StyleProfile)
     graphic_budget: int = 20  # Maximum number graphics permitted per video
     allow_unverified_claims: bool = False
@@ -156,6 +157,7 @@ def load_project_config(path_or_str: str | Path) -> ProjectConfig:
         cut_length=float(data.get("cut_length", 3.0)),
         tts_engine=str(data.get("tts_engine", "voxcpm")),
         visual_tiers=data.get("visual_tiers", ["archival", "ai_hero", "code2video", "stock"]),
+        all_ai_visuals=bool(data.get("all_ai_visuals", True)),
         style_profile=style,
         graphic_budget=int(data.get("graphic_budget", 20)),
         allow_unverified_claims=bool(data.get("allow_unverified_claims", False)),
@@ -181,6 +183,7 @@ def save_project_config(config: ProjectConfig, path: Path | str) -> None:
         "cut_length": config.cut_length,
         "tts_engine": config.tts_engine,
         "visual_tiers": config.visual_tiers,
+        "all_ai_visuals": config.all_ai_visuals,
         "style_profile": {
             "font_family": config.style_profile.font_family,
             "title_font": config.style_profile.title_font,

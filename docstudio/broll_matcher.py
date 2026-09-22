@@ -121,12 +121,16 @@ def is_pre_1900_scene(scene_text: str, topic: str = "", era_date: Optional[int] 
 
 
 class BRollMatcher:
-    def __init__(self, cache_dir: Path):
+    def __init__(self, cache_dir: Path, all_ai_visuals: bool | None = None):
         self.cache_dir = cache_dir
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.pexels_key = PEXELS_API_KEY
         self.pixabay_key = PIXABAY_API_KEY
         self.gemini_key = GEMINI_API_KEY
+        if all_ai_visuals is None:
+            self.all_ai_visuals = os.getenv("DOCSTUDIO_ALL_AI_VISUALS", "1").lower() in ("1", "true", "yes")
+        else:
+            self.all_ai_visuals = all_ai_visuals
         self.license_manifest = []
         self.used_archive_ids = set()
 
@@ -211,6 +215,26 @@ class BRollMatcher:
                     })
                     print(f"  [BRollMatcher] 🌟 Injected manual override asset for '{scene_id}': {candidate.name}")
                     return dest_video
+
+        # =========================================================================
+        # ALL-AI VISUALS DIRECTIVE (User-Enforced Narration-Grounded AI Generation)
+        # =========================================================================
+        if self.all_ai_visuals:
+            print(f"  [BRollMatcher] 🎨 Directing '{scene_id}' to AI Narrative Visual Engine (all_ai_visuals=True)...")
+            ai_vid = self._generate_narration_grounded_ai_video(
+                scene_id=scene_id,
+                narration=narration,
+                visual_prompt=visual_prompt,
+                topic=topic,
+                keywords=keywords,
+                dest_video=dest_video,
+                duration=duration,
+                width=width,
+                height=height,
+                archetype=archetype,
+            )
+            if ai_vid and ai_vid.exists() and ai_vid.stat().st_size > 10000:
+                return ai_vid
 
         # =========================================================================
         # TIER 1: ARCHETYPE-FIRST ROUTING (Guarantees Visual Diversity)
@@ -1425,11 +1449,34 @@ class BRollMatcher:
         Guarantees moving 30fps video output.
         """
         frames = int(max(1.0, duration) * 30)
+        # Select dynamic camera movement variation based on scene_id hash
+        move_type = abs(hash(scene_id)) % 4
+        if move_type == 0:
+            # Cinematic Slow Push-In
+            zoom_expr = "min(zoom+0.0014,1.20)"
+            x_expr = "iw/2-(iw/zoom/2)"
+            y_expr = "ih/2-(ih/zoom/2)"
+        elif move_type == 1:
+            # Cinematic Slow Pull-Back
+            zoom_expr = "max(1.18-0.0012*on,1.0)"
+            x_expr = "iw/2-(iw/zoom/2)"
+            y_expr = "ih/2-(ih/zoom/2)"
+        elif move_type == 2:
+            # Subtle Lateral Tracking Drift
+            zoom_expr = "1.14"
+            x_expr = f"min((on/{frames})*(iw-iw/zoom),iw-iw/zoom)"
+            y_expr = "ih/2-(ih/zoom/2)"
+        else:
+            # Subtle Vertical Crane Drift
+            zoom_expr = "min(1.06+0.001*on,1.18)"
+            x_expr = "iw/2-(iw/zoom/2)"
+            y_expr = f"min((on/{frames})*(ih-ih/zoom),ih-ih/zoom)"
+
         vf = (
             f"scale={width*2}:{height*2}:force_original_aspect_ratio=increase,crop={width*2}:{height*2},"
-            f"zoompan=z='min(zoom+0.0012,1.18)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+            f"zoompan=z='{zoom_expr}':x='{x_expr}':y='{y_expr}':"
             f"d={frames}:s={width}x{height}:fps=30,"
-            f"eq=contrast=1.05:brightness=-0.02:saturation=0.9,"
+            f"eq=contrast=1.06:brightness=-0.01:saturation=0.92,"
             f"format=yuv420p"
         )
         cmd = [
@@ -1453,6 +1500,190 @@ class BRollMatcher:
             "monetization_eligible": True,
         })
         return output_video
+
+    def _build_narration_grounded_ai_prompt(
+        self,
+        narration: str,
+        visual_prompt: str,
+        topic: str,
+        keywords: list[str],
+        archetype: str = "",
+    ) -> str:
+        """
+        Synthesizes a hyper-detailed cinematic AI prompt specifically illustrating
+        the exact line of narration being spoken in that shot.
+        """
+        clean_narration = re.sub(r'<[^>]+>', '', narration).strip()
+        clean_prompt = re.sub(r'<[^>]+>', '', visual_prompt).strip() if visual_prompt else ""
+        combined_text = (clean_narration + " " + clean_prompt + " " + " ".join(keywords)).lower()
+
+        is_doc_line = any(w in combined_text for w in ["file", "document", "blueprint", "warrant", "record", "classified", "folder", "paper", "dossier", "telegram", "evidence", "bag", "dna", "sandwich", "report", "clue", "swab"])
+        is_map_line = any(w in combined_text for w in ["map", "route", "satellite", "radar", "border", "highway", "telemetry", "coordinates", "escape", "city", "street", "gps"])
+        is_vault_line = any(w in combined_text for w in ["vault", "safe", "lock", "alarm", "sensor", "infrared", "tamper", "magnetic", "key", "diamond", "heist", "drill", "crack", "corridor", "hallway"])
+        is_court_or_police = any(w in combined_text for w in ["police", "court", "judge", "handcuff", "arrest", "suspect", "prison", "investigator", "detective"])
+
+        if is_doc_line:
+            core = f"Authentic forensic declassified {topic} investigation records, physical evidence markers and blueprints: {clean_narration}"
+            style = "extreme macro 35mm documentary photography, authentic tactile paper texture, official police stamps, sharp focus on details, dramatic moody table lamplight, subtle dust particles, photorealistic 8k"
+        elif is_map_line:
+            core = f"Aerial satellite overview and tactical surveillance map of {topic}: {clean_narration}"
+            style = "high-resolution cinematic satellite photograph, moody night atmosphere, subtle glowing tactical grid and route telemetry, 35mm film still, photorealistic 8k"
+        elif is_vault_line:
+            core = f"Underground high-security vault and intrusion system of {topic}: {clean_narration}"
+            style = "cinematic thriller 35mm photography, volumetric haze, atmospheric green indicator and sensor lights, heavy steel texture, dramatic chiaroscuro lighting, photorealistic 8k"
+        elif is_court_or_police:
+            core = f"Forensic law enforcement investigation of {topic}: {clean_narration}"
+            style = "authentic documentary archival photography, 35mm film grain, realistic courtroom or police station setting, dramatic cinematic lighting, photorealistic 8k"
+        else:
+            core = f"{topic} documentary scene: {clean_narration}"
+            style = "award-winning 35mm documentary film still, cinematic volumetric lighting, authentic historical realism, 8k resolution, photorealistic"
+
+        if clean_prompt and clean_prompt.lower() not in clean_narration.lower():
+            return f"{core}. Visual detail: {clean_prompt}. Aesthetic: {style}."
+        return f"{core}. Aesthetic: {style}."
+
+    def _generate_narration_grounded_ai_video(
+        self,
+        scene_id: str,
+        narration: str,
+        visual_prompt: str,
+        topic: str,
+        keywords: list[str],
+        dest_video: Path,
+        duration: float,
+        width: int,
+        height: int,
+        archetype: str = "",
+    ) -> Path | None:
+        """
+        Produces a unique, photorealistic 30fps AI video clip strictly generated
+        according to the spoken narration line, replacing static or procedural templates.
+        """
+        aspect_ratio_str = "9:16" if height > width else "16:9"
+        ai_prompt = self._build_narration_grounded_ai_prompt(
+            narration=narration,
+            visual_prompt=visual_prompt,
+            topic=topic,
+            keywords=keywords,
+            archetype=archetype,
+        )
+        print(f"  [AI Narrative Visual] Prompt: {ai_prompt[:115]}...")
+
+        img_bytes = None
+
+        # Engine 1: Google Gemini Imagen 3 / Gemini 2.5 Flash Image
+        key = self.gemini_key or os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+        if key:
+            try:
+                import concurrent.futures
+                from google import genai
+                client = genai.Client(api_key=key)
+
+                def _fetch_gemini():
+                    try:
+                        res = client.models.generate_images(
+                            model="imagen-3.0-generate-002",
+                            prompt=ai_prompt,
+                            config=dict(
+                                number_of_images=1,
+                                output_mime_type="image/jpeg",
+                                aspect_ratio=aspect_ratio_str,
+                            ),
+                        )
+                        if res and res.generated_images:
+                            return res.generated_images[0].image.image_bytes
+                    except Exception:
+                        pass
+                    try:
+                        res_content = client.models.generate_content(
+                            model="gemini-2.5-flash-image",
+                            contents=ai_prompt,
+                        )
+                        if res_content and res_content.candidates:
+                            for part in res_content.candidates[0].content.parts:
+                                if hasattr(part, "inline_data") and part.inline_data and part.inline_data.data:
+                                    return part.inline_data.data
+                    except Exception:
+                        pass
+                    return None
+
+                with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                    future = executor.submit(_fetch_gemini)
+                    try:
+                        img_bytes = future.result(timeout=14.0)
+                    except concurrent.futures.TimeoutError:
+                        print("  [AI Narrative Visual] Gemini Imagen timeout (14s) -> switching to Pollinations Flux...")
+                        img_bytes = None
+            except Exception as e:
+                print(f"  [AI Narrative Visual] Gemini notice: {e}")
+
+        # Engine 2: Pollinations Flux Engine (High-fidelity, ultra-reliable fallback)
+        if not img_bytes:
+            try:
+                clean_q = urllib.parse.quote(ai_prompt[:320])
+                seed = abs(hash(f"{scene_id}_{narration[:40]}_{topic}")) % 999999
+                flux_url = (
+                    f"https://image.pollinations.ai/prompt/{clean_q}"
+                    f"?width={width}&height={height}&model=flux"
+                    f"&seed={seed}&nologo=true"
+                )
+                for attempt in range(1, 4):
+                    try:
+                        resp = requests.get(flux_url, timeout=25)
+                        if resp.status_code == 200 and len(resp.content) > 15000:
+                            img_bytes = resp.content
+                            break
+                        elif resp.status_code == 429:
+                            time.sleep(2.0 * attempt)
+                    except Exception:
+                        time.sleep(1.0)
+            except Exception as e:
+                print(f"  [AI Narrative Visual] Pollinations Flux notice: {e}")
+
+        # If keyframe was obtained, animate into 30fps Ken Burns video
+        if img_bytes:
+            temp_img = self.cache_dir / f"{scene_id}_ai_keyframe.jpg"
+            temp_img.write_bytes(img_bytes)
+            vid = self._image_to_cinematic_motion_video(
+                image_path=temp_img,
+                output_video=dest_video,
+                width=width,
+                height=height,
+                duration=duration,
+                scene_id=scene_id,
+                source_name="AI Narrative Visual Engine (Prompt-Grounded)",
+            )
+            try:
+                temp_img.unlink()
+            except Exception:
+                pass
+            return vid
+
+        # Engine 3: ViMax-Directed 3D Parallax Video Generator
+        ai_gen = _get_ai_video_generator(self.cache_dir)
+        if ai_gen:
+            try:
+                ai_clip = ai_gen.generate_video_clip(
+                    scene_description=f"{narration} {visual_prompt}",
+                    topic=topic,
+                    dest_path=dest_video,
+                    duration=duration,
+                    width=width,
+                    height=height,
+                )
+                if ai_clip and ai_clip.exists():
+                    self.license_manifest.append({
+                        "scene_id": scene_id,
+                        "source": "DocStudio 3D Parallax Neural Visual Engine",
+                        "asset_path": str(ai_clip),
+                        "license": "AI Generated (Commercial Terms Verified)",
+                        "monetization_eligible": True,
+                    })
+                    return ai_clip
+            except Exception as e:
+                print(f"  [AI Narrative Visual] 3D Parallax notice: {e}")
+
+        return None
 
     def _generate_gemini_visual(
         self,
@@ -1516,10 +1747,21 @@ class BRollMatcher:
             with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
                 future = executor.submit(_fetch_ai_img)
                 try:
-                    img_bytes = future.result(timeout=8.0)
+                    img_bytes = future.result(timeout=16.0)
                 except concurrent.futures.TimeoutError:
-                    print("  [BRollMatcher] AI image generation timed out (8s limit) -> using designed visual card fallback.")
+                    print("  [BRollMatcher] AI image generation timed out (16s limit) -> using Pollinations fallback.")
                     img_bytes = None
+
+            if not img_bytes:
+                # Fall back to Pollinations Flux
+                try:
+                    clean_q = urllib.parse.quote(enhanced_prompt[:300])
+                    flux_url = f"https://image.pollinations.ai/prompt/{clean_q}?width={width}&height={height}&model=flux&seed={abs(hash(prompt)) % 999999}&nologo=true"
+                    resp = requests.get(flux_url, timeout=20)
+                    if resp.status_code == 200 and len(resp.content) > 15000:
+                        img_bytes = resp.content
+                except Exception:
+                    pass
 
             if img_bytes:
                 temp_img = self.cache_dir / f"{scene_id}_gemini_temp.jpg"

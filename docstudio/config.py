@@ -42,6 +42,9 @@ ASPECT_RATIOS = {
     "9:16": {"width": 1080, "height": 1920, "name": "TikTok / Shorts / Reels (9:16)"},
 }
 
+# Visual Generation Directives
+DOCSTUDIO_ALL_AI_VISUALS = os.getenv("DOCSTUDIO_ALL_AI_VISUALS", "1").lower() in ("1", "true", "yes")
+
 DEFAULT_ASPECT_RATIO = os.getenv("DOCSTUDIO_ASPECT_RATIO", "16:9")
 if DEFAULT_ASPECT_RATIO not in ASPECT_RATIOS:
     DEFAULT_ASPECT_RATIO = "16:9"

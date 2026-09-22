@@ -111,11 +111,16 @@ class DocumentaryPipeline:
         width: int | None = None,
         height: int | None = None,
         tts_engine: str = DOCSTUDIO_TTS_ENGINE,
+        all_ai_visuals: bool | None = None,
     ):
         self.voice = voice
         self.caption_style = caption_style
         self.aspect_ratio = aspect_ratio
         self.tts_engine = tts_engine
+        if all_ai_visuals is None:
+            self.all_ai_visuals = os.getenv("DOCSTUDIO_ALL_AI_VISUALS", "1").lower() in ("1", "true", "yes")
+        else:
+            self.all_ai_visuals = all_ai_visuals
         
         if width and height:
             self.width = width
@@ -168,6 +173,9 @@ class DocumentaryPipeline:
         print(f"[DOCSTUDIO] Production Studio: {topic} (Target Runtime: {runtime}, Aspect Ratio: {self.aspect_ratio})")
         print(f"[DOCSTUDIO] Run Checkpoint Folder: {run_dir}")
         print("=" * 65 + "\n")
+
+        if project_config and hasattr(project_config, "all_ai_visuals") and project_config.all_ai_visuals is not None:
+            self.all_ai_visuals = project_config.all_ai_visuals
 
         try:
             # ----------------------------------------------------
@@ -312,9 +320,9 @@ class DocumentaryPipeline:
             # ----------------------------------------------------
             tracker.stage_start(4)
             visuals_dir = run_dir / "04_visuals"
-            visual_matcher = BRollMatcher(cache_dir=visuals_dir)
+            visual_matcher = BRollMatcher(cache_dir=visuals_dir, all_ai_visuals=self.all_ai_visuals)
             visual_assets = {}
-            usage_reg = UsageRegistry(run_dir=run_dir)
+            usage_reg = UsageRegistry(run_dir=run_dir, allow_all_ai=self.all_ai_visuals)
             relevance_scorer = get_scorer()
 
             # Calculate beat-aware timeline shots so rapid cuts (sub-shots) get dedicated visual assets

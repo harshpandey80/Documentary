@@ -16,10 +16,13 @@ See [AGENTS.md](file:///c:/Users/Harsh%20Pandey/OneDrive/Desktop/documentry-AI/A
    - Dynamic motion (Ken Burns) on every shot.
 4. **Subtitles & CTA**:
    - Hormozi word-by-word active green highlighting.
-   - Spoken and visual "Like and Subscribe" CTA ending with an unsealed files curiosity hook.
 5. **Multi-Tier Visual Mix & Pre-Render Storyboard Review (CRITICAL)**:
    - Ban 100% stock footage compilations.
    - Intelligently combine all 4 tiers: AI Cinematic Recreations (3D), 3D Animated Tactical Maps (`Code2Video`), Declassified Forensic Records, and Atmospheric Cinema Stock.
    - Create attentive, unique cold hooks (0–8s) tailored to the mystery.
    - Always present the visual combination plan to the user before rendering.
+6. **100% Narration-Grounded AI Visual Engine (STRICT RULE)**:
+   - Ban repetitive procedural dossier overlays, canvas templates, and static map cards.
+   - Every scene visual MUST be an authentic, photorealistic AI-generated clip generated specifically from the exact spoken line of narration.
+   - Enabled by default via `DOCSTUDIO_ALL_AI_VISUALS=1` (`--all-ai-visuals`).
 

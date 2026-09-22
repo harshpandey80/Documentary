@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
 from threading import Lock
 from typing import Dict, List, Optional
@@ -39,9 +40,13 @@ class UsageRegistry:
         "CINEMATIC_STOCK",
     }
 
-    def __init__(self, run_dir: Path, max_reuse: int = 2):
+    def __init__(self, run_dir: Path, max_reuse: int = 2, allow_all_ai: bool | None = None):
         self.run_dir = Path(run_dir)
         self.max_reuse = max_reuse
+        if allow_all_ai is None:
+            self.allow_all_ai = os.getenv("DOCSTUDIO_ALL_AI_VISUALS", "1").lower() in ("1", "true", "yes")
+        else:
+            self.allow_all_ai = allow_all_ai
         self._lock = Lock()
 
         # path -> list of scene_ids that used it
@@ -115,18 +120,19 @@ class UsageRegistry:
         """
         dist = self.tier_distribution(total_shots)
         violations: List[str] = []
-        if dist.get("AI_CINEMATIC_RECREATION", 0) < 20.0:
-            violations.append(
-                f"AI_CINEMATIC_RECREATION underused: {dist.get('AI_CINEMATIC_RECREATION', 0):.1f}% (min 20%)"
-            )
-        if dist.get("INFOGRAPHIC_CODE2VIDEO", 0) < 20.0:
-            violations.append(
-                f"INFOGRAPHIC_CODE2VIDEO underused: {dist.get('INFOGRAPHIC_CODE2VIDEO', 0):.1f}% (min 20%)"
-            )
-        if dist.get("FORENSIC_ARCHIVAL", 0) < 20.0:
-            violations.append(
-                f"FORENSIC_ARCHIVAL underused: {dist.get('FORENSIC_ARCHIVAL', 0):.1f}% (min 20%)"
-            )
+        if not self.allow_all_ai:
+            if dist.get("AI_CINEMATIC_RECREATION", 0) < 20.0:
+                violations.append(
+                    f"AI_CINEMATIC_RECREATION underused: {dist.get('AI_CINEMATIC_RECREATION', 0):.1f}% (min 20%)"
+                )
+            if dist.get("INFOGRAPHIC_CODE2VIDEO", 0) < 20.0:
+                violations.append(
+                    f"INFOGRAPHIC_CODE2VIDEO underused: {dist.get('INFOGRAPHIC_CODE2VIDEO', 0):.1f}% (min 20%)"
+                )
+            if dist.get("FORENSIC_ARCHIVAL", 0) < 20.0:
+                violations.append(
+                    f"FORENSIC_ARCHIVAL underused: {dist.get('FORENSIC_ARCHIVAL', 0):.1f}% (min 20%)"
+                )
         if dist.get("CINEMATIC_STOCK", 0) > 30.0:
             violations.append(
                 f"CINEMATIC_STOCK over-used: {dist.get('CINEMATIC_STOCK', 0):.1f}% (max 30%)"

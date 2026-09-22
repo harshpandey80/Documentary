@@ -58,3 +58,14 @@ These rules are permanent project guidelines. Every AI agent working on this doc
 - **Attentive & Unique Cold Hooks (0–8s)**: Cold hooks must be tailored specifically to the mystery's greatest shock element (e.g. abrupt 3D cockpit master alarm vs. pulsing magnetic radar anomaly vs. declassified telegram zoom).
 - **Mandatory Pre-Render Combination Review**: Before generating assets or rendering video, the agent/studio MUST formulate and present the complete scene-by-scene visual archetype combination table to the user for approval.
 
+---
+
+## 8. 100% Narration-Grounded AI Visual Engine (STRICT RULE)
+- **Zero Repetitive Dossier/Map Templates**: NEVER reuse generic procedural canvas templates, static dossier overlays, or identical map graphic cards across cuts.
+- **100% Narration-Grounded Generation**: Every single visual cut must be an authentic, photorealistic AI visual prompted directly and specifically from the exact spoken narration line.
+- **Scene-Specific Subject Accuracy**:
+  - If the narrator says "surveillance cameras blinked off", generate security monitor static with digital timestamp drift.
+  - If the narrator says "an Italian master thief picked the lock", generate an 8K macro closeup of gloved fingers manipulating safe tumblers.
+  - If the narrator says "they left behind a half-eaten sandwich", generate photographic police forensic evidence of a sandwich beside an opened vault.
+- **Default Pipeline Enforcement**: Enabled by default via `DOCSTUDIO_ALL_AI_VISUALS=1` (`--all-ai-visuals`). All cuts are uniquely generated, 3D motion animated, and permanently monetizable.
+

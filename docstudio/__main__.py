@@ -29,6 +29,8 @@ def main():
     run_parser.add_argument("--aspect-ratio", "-a", default="16:9", choices=["16:9", "9:16"], help="Output aspect ratio (16:9 landscape or 9:16 portrait)")
     run_parser.add_argument("--run-id", default=None, type=str, help="Custom folder name for this production run")
     run_parser.add_argument("--runtime", "-r", default="5m", choices=["45s", "50s", "60s", "90s", "1m", "1.5m", "3m", "5m", "8m", "10m"], help="Target documentary runtime duration (default: 5m)")
+    run_parser.add_argument("--all-ai-visuals", action="store_true", default=None, help="Force all scenes to be photorealistic AI-generated visuals strictly grounded in spoken narration")
+    run_parser.add_argument("--no-all-ai-visuals", action="store_false", dest="all_ai_visuals", help="Disable all-AI visual generation and allow procedural stock/templates")
     run_parser.add_argument("--force", default=None, type=str, help="Comma-separated stages to force rebuild: script,audio,captions,visuals,mix,render")
 
     # Command: server (InVideo Web Studio)
@@ -110,6 +112,7 @@ def main():
             caption_style=style,
             aspect_ratio=aspect_ratio,
             tts_engine=tts_engine,
+            all_ai_visuals=args.all_ai_visuals,
         )
         pipeline.run(
             topic=topic,
